@@ -18,8 +18,7 @@ class ArrayOfPuntoDeRedDTO
     }
 
     /**
-     * @param PuntoDeRedDTO[]|null $PuntoDeRedDTO
-     *
+     * @param  PuntoDeRedDTO[]|null  $PuntoDeRedDTO
      * @return $this
      */
     public function withPuntoDeRedDTO(?array $PuntoDeRedDTO): static

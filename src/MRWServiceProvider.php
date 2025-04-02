@@ -12,4 +12,12 @@ class MRWServiceProvider extends PackageServiceProvider
         $package
             ->name('mrw-api');
     }
+
+    public function registeringPackage(): void
+    {
+        $this->app->bind(MRW::class, function ($app) {
+            return new MRW($app['events'], Config::fromArray($app['config']['services']['mrw']));
+        });
+
+    }
 }

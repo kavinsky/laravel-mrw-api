@@ -10,11 +10,8 @@ use Psr\Http\Message\ResponseInterface;
 
 class LaravelHttpClient implements ClientInterface
 {
-
     /**
-     * @param mixed[] $options
-     *
-     * @return static
+     * @param  mixed[]  $options
      */
     public static function make(array $options = []): static
     {

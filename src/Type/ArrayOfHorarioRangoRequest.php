@@ -18,8 +18,7 @@ class ArrayOfHorarioRangoRequest
     }
 
     /**
-     * @param null|array<int<0, max>, HorarioRangoRequest> $HorarioRangoRequest
-     *
+     * @param  null|array<int<0, max>, HorarioRangoRequest>  $HorarioRangoRequest
      * @return $this
      */
     public function withHorarioRangoRequest(?array $HorarioRangoRequest): static

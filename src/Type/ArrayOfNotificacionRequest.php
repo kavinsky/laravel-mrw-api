@@ -18,7 +18,7 @@ class ArrayOfNotificacionRequest
     }
 
     /**
-     * @param null|array<int<0, max>, NotificacionRequest> $NotificacionRequest
+     * @param  null|array<int<0, max>, NotificacionRequest>  $NotificacionRequest
      */
     public function withNotificacionRequest(?array $NotificacionRequest): static
     {

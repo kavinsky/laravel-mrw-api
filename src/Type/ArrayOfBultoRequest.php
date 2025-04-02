@@ -18,7 +18,7 @@ class ArrayOfBultoRequest
     }
 
     /**
-     * @param null|array<int<0, max>, BultoRequest> $BultoRequest
+     * @param  null|array<int<0, max>, BultoRequest>  $BultoRequest
      */
     public function withBultoRequest(?array $BultoRequest): static
     {

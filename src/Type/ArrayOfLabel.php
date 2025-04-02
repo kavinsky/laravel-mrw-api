@@ -18,7 +18,7 @@ class ArrayOfLabel
     }
 
     /**
-     * @param null|array<int<0, max>, Label> $Label
+     * @param  null|array<int<0, max>, Label>  $Label
      */
     public function withLabel(?array $Label): static
     {

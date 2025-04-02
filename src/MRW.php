@@ -57,7 +57,7 @@ class MRW
     }
 
     /**
-     * @param mixed[] $parameters
+     * @param  mixed[]  $parameters
      */
     public function __call(string $method, array $parameters): mixed
     {

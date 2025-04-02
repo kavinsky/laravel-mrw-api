@@ -9,17 +9,14 @@ class EtiquetaEnvioResponse extends BaseResponse
      */
     private mixed $EtiquetaFile = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $EtiquetaFileZpl = null;
 
-    public function getEtiquetaFile() : mixed
+    public function getEtiquetaFile(): mixed
     {
         return $this->EtiquetaFile;
     }
 
-    public function withEtiquetaFile(mixed $EtiquetaFile) : static
+    public function withEtiquetaFile(mixed $EtiquetaFile): static
     {
         $new = clone $this;
         $new->EtiquetaFile = $EtiquetaFile;
@@ -27,12 +24,12 @@ class EtiquetaEnvioResponse extends BaseResponse
         return $new;
     }
 
-    public function getEtiquetaFileZpl() : ?string
+    public function getEtiquetaFileZpl(): ?string
     {
         return $this->EtiquetaFileZpl;
     }
 
-    public function withEtiquetaFileZpl(?string $EtiquetaFileZpl) : static
+    public function withEtiquetaFileZpl(?string $EtiquetaFileZpl): static
     {
         $new = clone $this;
         $new->EtiquetaFileZpl = $EtiquetaFileZpl;
@@ -40,4 +37,3 @@ class EtiquetaEnvioResponse extends BaseResponse
         return $new;
     }
 }
-

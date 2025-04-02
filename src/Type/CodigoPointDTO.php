@@ -4,22 +4,16 @@ namespace Kavinsky\MRW\Type;
 
 class CodigoPointDTO
 {
-    /**
-     * @var null | string
-     */
     private ?string $Codigo = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Tipo = null;
 
-    public function getCodigo() : ?string
+    public function getCodigo(): ?string
     {
         return $this->Codigo;
     }
 
-    public function withCodigo(?string $Codigo) : static
+    public function withCodigo(?string $Codigo): static
     {
         $new = clone $this;
         $new->Codigo = $Codigo;
@@ -27,12 +21,12 @@ class CodigoPointDTO
         return $new;
     }
 
-    public function getTipo() : ?string
+    public function getTipo(): ?string
     {
         return $this->Tipo;
     }
 
-    public function withTipo(?string $Tipo) : static
+    public function withTipo(?string $Tipo): static
     {
         $new = clone $this;
         $new->Tipo = $Tipo;
@@ -40,4 +34,3 @@ class CodigoPointDTO
         return $new;
     }
 }
-

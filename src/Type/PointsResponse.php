@@ -4,17 +4,14 @@ namespace Kavinsky\MRW\Type;
 
 class PointsResponse extends BaseResponse
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\ArrayOfPuntoDeRedDTO
-     */
-    private ?\Kavinsky\MRW\Type\ArrayOfPuntoDeRedDTO $PointList = null;
+    private ?ArrayOfPuntoDeRedDTO $PointList = null;
 
-    public function getPointList() : ?\Kavinsky\MRW\Type\ArrayOfPuntoDeRedDTO
+    public function getPointList(): ?ArrayOfPuntoDeRedDTO
     {
         return $this->PointList;
     }
 
-    public function withPointList(?\Kavinsky\MRW\Type\ArrayOfPuntoDeRedDTO $PointList) : static
+    public function withPointList(?ArrayOfPuntoDeRedDTO $PointList): static
     {
         $new = clone $this;
         $new->PointList = $PointList;
@@ -22,4 +19,3 @@ class PointsResponse extends BaseResponse
         return $new;
     }
 }
-

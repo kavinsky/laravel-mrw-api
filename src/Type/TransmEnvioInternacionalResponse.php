@@ -6,17 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class TransmEnvioInternacionalResponse implements ResultInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\TransmEnvioResponse
-     */
-    private ?\Kavinsky\MRW\Type\TransmEnvioResponse $TransmEnvioInternacionalResult = null;
+    private ?TransmEnvioResponse $TransmEnvioInternacionalResult = null;
 
-    public function getTransmEnvioInternacionalResult() : ?\Kavinsky\MRW\Type\TransmEnvioResponse
+    public function getTransmEnvioInternacionalResult(): ?TransmEnvioResponse
     {
         return $this->TransmEnvioInternacionalResult;
     }
 
-    public function withTransmEnvioInternacionalResult(?\Kavinsky\MRW\Type\TransmEnvioResponse $TransmEnvioInternacionalResult) : static
+    public function withTransmEnvioInternacionalResult(?TransmEnvioResponse $TransmEnvioInternacionalResult): static
     {
         $new = clone $this;
         $new->TransmEnvioInternacionalResult = $TransmEnvioInternacionalResult;
@@ -24,4 +21,3 @@ class TransmEnvioInternacionalResponse implements ResultInterface
         return $new;
     }
 }
-

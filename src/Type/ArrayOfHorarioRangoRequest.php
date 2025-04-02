@@ -5,16 +5,24 @@ namespace Kavinsky\MRW\Type;
 class ArrayOfHorarioRangoRequest
 {
     /**
-     * @var null | array<int<0,max>, \Kavinsky\MRW\Type\HorarioRangoRequest>
+     * @var null|array<int<0, max>, HorarioRangoRequest>
      */
     private ?array $HorarioRangoRequest = null;
 
-    public function getHorarioRangoRequest() : ?array
+    /**
+     * @return \Kavinsky\MRW\Type\HorarioRangoRequest[]|null
+     */
+    public function getHorarioRangoRequest(): ?array
     {
         return $this->HorarioRangoRequest;
     }
 
-    public function withHorarioRangoRequest(?array $HorarioRangoRequest) : static
+    /**
+     * @param null|array<int<0, max>, HorarioRangoRequest> $HorarioRangoRequest
+     *
+     * @return $this
+     */
+    public function withHorarioRangoRequest(?array $HorarioRangoRequest): static
     {
         $new = clone $this;
         $new->HorarioRangoRequest = $HorarioRangoRequest;
@@ -22,4 +30,3 @@ class ArrayOfHorarioRangoRequest
         return $new;
     }
 }
-

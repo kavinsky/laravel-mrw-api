@@ -4,184 +4,76 @@ namespace Kavinsky\MRW\Type;
 
 class DatosServicioRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $Fecha = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroAlbaran = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Referencia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CorrelacionRef = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $EnFranquicia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoServicio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $DescripcionServicio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Frecuencia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPromocion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroSobre = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\ArrayOfBultoRequest
-     */
-    private ?\Kavinsky\MRW\Type\ArrayOfBultoRequest $Bultos = null;
+    private ?ArrayOfBultoRequest $Bultos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroBultos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Peso = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroPuentes = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $EntregaSabado = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Entrega830 = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $EntregaPartirDe = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Gestion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Retorno = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoServicioRetorno = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ConfirmacionInmediata = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Reembolso = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ImporteReembolso = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TipoMercancia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ValorDeclarado = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ServicioEspecial = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoMoneda = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ValorEstadistico = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ValorEstadisticoEuros = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\ArrayOfNotificacionRequest
-     */
-    private ?\Kavinsky\MRW\Type\ArrayOfNotificacionRequest $Notificaciones = null;
+    private ?ArrayOfNotificacionRequest $Notificaciones = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\SeguroOpcionalRequest
-     */
-    private ?\Kavinsky\MRW\Type\SeguroOpcionalRequest $SeguroOpcional = null;
+    private ?SeguroOpcionalRequest $SeguroOpcional = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TramoHorario = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $PortesDebidos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Mascara_Tipos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Mascara_Campos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Asistente = null;
 
     /**
@@ -189,12 +81,12 @@ class DatosServicioRequest
      */
     private mixed $Burofax = null;
 
-    public function getFecha() : ?string
+    public function getFecha(): ?string
     {
         return $this->Fecha;
     }
 
-    public function withFecha(?string $Fecha) : static
+    public function withFecha(?string $Fecha): static
     {
         $new = clone $this;
         $new->Fecha = $Fecha;
@@ -202,12 +94,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getNumeroAlbaran() : ?string
+    public function getNumeroAlbaran(): ?string
     {
         return $this->NumeroAlbaran;
     }
 
-    public function withNumeroAlbaran(?string $NumeroAlbaran) : static
+    public function withNumeroAlbaran(?string $NumeroAlbaran): static
     {
         $new = clone $this;
         $new->NumeroAlbaran = $NumeroAlbaran;
@@ -215,12 +107,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getReferencia() : ?string
+    public function getReferencia(): ?string
     {
         return $this->Referencia;
     }
 
-    public function withReferencia(?string $Referencia) : static
+    public function withReferencia(?string $Referencia): static
     {
         $new = clone $this;
         $new->Referencia = $Referencia;
@@ -228,12 +120,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getCorrelacionRef() : ?string
+    public function getCorrelacionRef(): ?string
     {
         return $this->CorrelacionRef;
     }
 
-    public function withCorrelacionRef(?string $CorrelacionRef) : static
+    public function withCorrelacionRef(?string $CorrelacionRef): static
     {
         $new = clone $this;
         $new->CorrelacionRef = $CorrelacionRef;
@@ -241,12 +133,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getEnFranquicia() : ?string
+    public function getEnFranquicia(): ?string
     {
         return $this->EnFranquicia;
     }
 
-    public function withEnFranquicia(?string $EnFranquicia) : static
+    public function withEnFranquicia(?string $EnFranquicia): static
     {
         $new = clone $this;
         $new->EnFranquicia = $EnFranquicia;
@@ -254,12 +146,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getCodigoServicio() : ?string
+    public function getCodigoServicio(): ?string
     {
         return $this->CodigoServicio;
     }
 
-    public function withCodigoServicio(?string $CodigoServicio) : static
+    public function withCodigoServicio(?string $CodigoServicio): static
     {
         $new = clone $this;
         $new->CodigoServicio = $CodigoServicio;
@@ -267,12 +159,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getDescripcionServicio() : ?string
+    public function getDescripcionServicio(): ?string
     {
         return $this->DescripcionServicio;
     }
 
-    public function withDescripcionServicio(?string $DescripcionServicio) : static
+    public function withDescripcionServicio(?string $DescripcionServicio): static
     {
         $new = clone $this;
         $new->DescripcionServicio = $DescripcionServicio;
@@ -280,12 +172,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getFrecuencia() : ?string
+    public function getFrecuencia(): ?string
     {
         return $this->Frecuencia;
     }
 
-    public function withFrecuencia(?string $Frecuencia) : static
+    public function withFrecuencia(?string $Frecuencia): static
     {
         $new = clone $this;
         $new->Frecuencia = $Frecuencia;
@@ -293,12 +185,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getCodigoPromocion() : ?string
+    public function getCodigoPromocion(): ?string
     {
         return $this->CodigoPromocion;
     }
 
-    public function withCodigoPromocion(?string $CodigoPromocion) : static
+    public function withCodigoPromocion(?string $CodigoPromocion): static
     {
         $new = clone $this;
         $new->CodigoPromocion = $CodigoPromocion;
@@ -306,12 +198,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getNumeroSobre() : ?string
+    public function getNumeroSobre(): ?string
     {
         return $this->NumeroSobre;
     }
 
-    public function withNumeroSobre(?string $NumeroSobre) : static
+    public function withNumeroSobre(?string $NumeroSobre): static
     {
         $new = clone $this;
         $new->NumeroSobre = $NumeroSobre;
@@ -319,12 +211,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getBultos() : ?\Kavinsky\MRW\Type\ArrayOfBultoRequest
+    public function getBultos(): ?ArrayOfBultoRequest
     {
         return $this->Bultos;
     }
 
-    public function withBultos(?\Kavinsky\MRW\Type\ArrayOfBultoRequest $Bultos) : static
+    public function withBultos(?ArrayOfBultoRequest $Bultos): static
     {
         $new = clone $this;
         $new->Bultos = $Bultos;
@@ -332,12 +224,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getNumeroBultos() : ?string
+    public function getNumeroBultos(): ?string
     {
         return $this->NumeroBultos;
     }
 
-    public function withNumeroBultos(?string $NumeroBultos) : static
+    public function withNumeroBultos(?string $NumeroBultos): static
     {
         $new = clone $this;
         $new->NumeroBultos = $NumeroBultos;
@@ -345,12 +237,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getPeso() : ?string
+    public function getPeso(): ?string
     {
         return $this->Peso;
     }
 
-    public function withPeso(?string $Peso) : static
+    public function withPeso(?string $Peso): static
     {
         $new = clone $this;
         $new->Peso = $Peso;
@@ -358,12 +250,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getNumeroPuentes() : ?string
+    public function getNumeroPuentes(): ?string
     {
         return $this->NumeroPuentes;
     }
 
-    public function withNumeroPuentes(?string $NumeroPuentes) : static
+    public function withNumeroPuentes(?string $NumeroPuentes): static
     {
         $new = clone $this;
         $new->NumeroPuentes = $NumeroPuentes;
@@ -371,12 +263,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getEntregaSabado() : ?string
+    public function getEntregaSabado(): ?string
     {
         return $this->EntregaSabado;
     }
 
-    public function withEntregaSabado(?string $EntregaSabado) : static
+    public function withEntregaSabado(?string $EntregaSabado): static
     {
         $new = clone $this;
         $new->EntregaSabado = $EntregaSabado;
@@ -384,12 +276,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getEntrega830() : ?string
+    public function getEntrega830(): ?string
     {
         return $this->Entrega830;
     }
 
-    public function withEntrega830(?string $Entrega830) : static
+    public function withEntrega830(?string $Entrega830): static
     {
         $new = clone $this;
         $new->Entrega830 = $Entrega830;
@@ -397,12 +289,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getEntregaPartirDe() : ?string
+    public function getEntregaPartirDe(): ?string
     {
         return $this->EntregaPartirDe;
     }
 
-    public function withEntregaPartirDe(?string $EntregaPartirDe) : static
+    public function withEntregaPartirDe(?string $EntregaPartirDe): static
     {
         $new = clone $this;
         $new->EntregaPartirDe = $EntregaPartirDe;
@@ -410,12 +302,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getGestion() : ?string
+    public function getGestion(): ?string
     {
         return $this->Gestion;
     }
 
-    public function withGestion(?string $Gestion) : static
+    public function withGestion(?string $Gestion): static
     {
         $new = clone $this;
         $new->Gestion = $Gestion;
@@ -423,12 +315,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getRetorno() : ?string
+    public function getRetorno(): ?string
     {
         return $this->Retorno;
     }
 
-    public function withRetorno(?string $Retorno) : static
+    public function withRetorno(?string $Retorno): static
     {
         $new = clone $this;
         $new->Retorno = $Retorno;
@@ -436,12 +328,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getCodigoServicioRetorno() : ?string
+    public function getCodigoServicioRetorno(): ?string
     {
         return $this->CodigoServicioRetorno;
     }
 
-    public function withCodigoServicioRetorno(?string $CodigoServicioRetorno) : static
+    public function withCodigoServicioRetorno(?string $CodigoServicioRetorno): static
     {
         $new = clone $this;
         $new->CodigoServicioRetorno = $CodigoServicioRetorno;
@@ -449,12 +341,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getConfirmacionInmediata() : ?string
+    public function getConfirmacionInmediata(): ?string
     {
         return $this->ConfirmacionInmediata;
     }
 
-    public function withConfirmacionInmediata(?string $ConfirmacionInmediata) : static
+    public function withConfirmacionInmediata(?string $ConfirmacionInmediata): static
     {
         $new = clone $this;
         $new->ConfirmacionInmediata = $ConfirmacionInmediata;
@@ -462,12 +354,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getReembolso() : ?string
+    public function getReembolso(): ?string
     {
         return $this->Reembolso;
     }
 
-    public function withReembolso(?string $Reembolso) : static
+    public function withReembolso(?string $Reembolso): static
     {
         $new = clone $this;
         $new->Reembolso = $Reembolso;
@@ -475,12 +367,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getImporteReembolso() : ?string
+    public function getImporteReembolso(): ?string
     {
         return $this->ImporteReembolso;
     }
 
-    public function withImporteReembolso(?string $ImporteReembolso) : static
+    public function withImporteReembolso(?string $ImporteReembolso): static
     {
         $new = clone $this;
         $new->ImporteReembolso = $ImporteReembolso;
@@ -488,12 +380,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getTipoMercancia() : ?string
+    public function getTipoMercancia(): ?string
     {
         return $this->TipoMercancia;
     }
 
-    public function withTipoMercancia(?string $TipoMercancia) : static
+    public function withTipoMercancia(?string $TipoMercancia): static
     {
         $new = clone $this;
         $new->TipoMercancia = $TipoMercancia;
@@ -501,12 +393,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getValorDeclarado() : ?string
+    public function getValorDeclarado(): ?string
     {
         return $this->ValorDeclarado;
     }
 
-    public function withValorDeclarado(?string $ValorDeclarado) : static
+    public function withValorDeclarado(?string $ValorDeclarado): static
     {
         $new = clone $this;
         $new->ValorDeclarado = $ValorDeclarado;
@@ -514,12 +406,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getServicioEspecial() : ?string
+    public function getServicioEspecial(): ?string
     {
         return $this->ServicioEspecial;
     }
 
-    public function withServicioEspecial(?string $ServicioEspecial) : static
+    public function withServicioEspecial(?string $ServicioEspecial): static
     {
         $new = clone $this;
         $new->ServicioEspecial = $ServicioEspecial;
@@ -527,12 +419,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getCodigoMoneda() : ?string
+    public function getCodigoMoneda(): ?string
     {
         return $this->CodigoMoneda;
     }
 
-    public function withCodigoMoneda(?string $CodigoMoneda) : static
+    public function withCodigoMoneda(?string $CodigoMoneda): static
     {
         $new = clone $this;
         $new->CodigoMoneda = $CodigoMoneda;
@@ -540,12 +432,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getValorEstadistico() : ?string
+    public function getValorEstadistico(): ?string
     {
         return $this->ValorEstadistico;
     }
 
-    public function withValorEstadistico(?string $ValorEstadistico) : static
+    public function withValorEstadistico(?string $ValorEstadistico): static
     {
         $new = clone $this;
         $new->ValorEstadistico = $ValorEstadistico;
@@ -553,12 +445,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getValorEstadisticoEuros() : ?string
+    public function getValorEstadisticoEuros(): ?string
     {
         return $this->ValorEstadisticoEuros;
     }
 
-    public function withValorEstadisticoEuros(?string $ValorEstadisticoEuros) : static
+    public function withValorEstadisticoEuros(?string $ValorEstadisticoEuros): static
     {
         $new = clone $this;
         $new->ValorEstadisticoEuros = $ValorEstadisticoEuros;
@@ -566,12 +458,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getNotificaciones() : ?\Kavinsky\MRW\Type\ArrayOfNotificacionRequest
+    public function getNotificaciones(): ?ArrayOfNotificacionRequest
     {
         return $this->Notificaciones;
     }
 
-    public function withNotificaciones(?\Kavinsky\MRW\Type\ArrayOfNotificacionRequest $Notificaciones) : static
+    public function withNotificaciones(?ArrayOfNotificacionRequest $Notificaciones): static
     {
         $new = clone $this;
         $new->Notificaciones = $Notificaciones;
@@ -579,12 +471,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getSeguroOpcional() : ?\Kavinsky\MRW\Type\SeguroOpcionalRequest
+    public function getSeguroOpcional(): ?SeguroOpcionalRequest
     {
         return $this->SeguroOpcional;
     }
 
-    public function withSeguroOpcional(?\Kavinsky\MRW\Type\SeguroOpcionalRequest $SeguroOpcional) : static
+    public function withSeguroOpcional(?SeguroOpcionalRequest $SeguroOpcional): static
     {
         $new = clone $this;
         $new->SeguroOpcional = $SeguroOpcional;
@@ -592,12 +484,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getTramoHorario() : ?string
+    public function getTramoHorario(): ?string
     {
         return $this->TramoHorario;
     }
 
-    public function withTramoHorario(?string $TramoHorario) : static
+    public function withTramoHorario(?string $TramoHorario): static
     {
         $new = clone $this;
         $new->TramoHorario = $TramoHorario;
@@ -605,12 +497,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getPortesDebidos() : ?string
+    public function getPortesDebidos(): ?string
     {
         return $this->PortesDebidos;
     }
 
-    public function withPortesDebidos(?string $PortesDebidos) : static
+    public function withPortesDebidos(?string $PortesDebidos): static
     {
         $new = clone $this;
         $new->PortesDebidos = $PortesDebidos;
@@ -618,12 +510,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getMascara_Tipos() : ?string
+    public function getMascara_Tipos(): ?string
     {
         return $this->Mascara_Tipos;
     }
 
-    public function withMascara_Tipos(?string $Mascara_Tipos) : static
+    public function withMascara_Tipos(?string $Mascara_Tipos): static
     {
         $new = clone $this;
         $new->Mascara_Tipos = $Mascara_Tipos;
@@ -631,12 +523,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getMascara_Campos() : ?string
+    public function getMascara_Campos(): ?string
     {
         return $this->Mascara_Campos;
     }
 
-    public function withMascara_Campos(?string $Mascara_Campos) : static
+    public function withMascara_Campos(?string $Mascara_Campos): static
     {
         $new = clone $this;
         $new->Mascara_Campos = $Mascara_Campos;
@@ -644,12 +536,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getAsistente() : ?string
+    public function getAsistente(): ?string
     {
         return $this->Asistente;
     }
 
-    public function withAsistente(?string $Asistente) : static
+    public function withAsistente(?string $Asistente): static
     {
         $new = clone $this;
         $new->Asistente = $Asistente;
@@ -657,12 +549,12 @@ class DatosServicioRequest
         return $new;
     }
 
-    public function getBurofax() : mixed
+    public function getBurofax(): mixed
     {
         return $this->Burofax;
     }
 
-    public function withBurofax(mixed $Burofax) : static
+    public function withBurofax(mixed $Burofax): static
     {
         $new = clone $this;
         $new->Burofax = $Burofax;
@@ -670,4 +562,3 @@ class DatosServicioRequest
         return $new;
     }
 }
-

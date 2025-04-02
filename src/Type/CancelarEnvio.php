@@ -6,22 +6,19 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class CancelarEnvio implements RequestInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\CancelarEnvioRequest
-     */
-    private ?\Kavinsky\MRW\Type\CancelarEnvioRequest $request = null;
+    private ?CancelarEnvioRequest $request = null;
 
-    public function __construct(?\Kavinsky\MRW\Type\CancelarEnvioRequest $request)
+    public function __construct(?CancelarEnvioRequest $request)
     {
         $this->request = $request;
     }
 
-    public function getRequest() : ?\Kavinsky\MRW\Type\CancelarEnvioRequest
+    public function getRequest(): ?CancelarEnvioRequest
     {
         return $this->request;
     }
 
-    public function withRequest(?\Kavinsky\MRW\Type\CancelarEnvioRequest $request) : static
+    public function withRequest(?CancelarEnvioRequest $request): static
     {
         $new = clone $this;
         $new->request = $request;
@@ -29,4 +26,3 @@ class CancelarEnvio implements RequestInterface
         return $new;
     }
 }
-

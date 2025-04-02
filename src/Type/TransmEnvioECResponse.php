@@ -6,17 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class TransmEnvioECResponse implements ResultInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\TransEnvioECResponse
-     */
-    private ?\Kavinsky\MRW\Type\TransEnvioECResponse $TransmEnvioECResult = null;
+    private ?TransEnvioECResponse $TransmEnvioECResult = null;
 
-    public function getTransmEnvioECResult() : ?\Kavinsky\MRW\Type\TransEnvioECResponse
+    public function getTransmEnvioECResult(): ?TransEnvioECResponse
     {
         return $this->TransmEnvioECResult;
     }
 
-    public function withTransmEnvioECResult(?\Kavinsky\MRW\Type\TransEnvioECResponse $TransmEnvioECResult) : static
+    public function withTransmEnvioECResult(?TransEnvioECResponse $TransmEnvioECResult): static
     {
         $new = clone $this;
         $new->TransmEnvioECResult = $TransmEnvioECResult;
@@ -24,4 +21,3 @@ class TransmEnvioECResponse implements ResultInterface
         return $new;
     }
 }
-

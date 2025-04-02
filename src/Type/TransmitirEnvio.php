@@ -6,22 +6,19 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class TransmitirEnvio implements RequestInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\TransmitirEnvioRequest
-     */
-    private ?\Kavinsky\MRW\Type\TransmitirEnvioRequest $request = null;
+    private ?TransmitirEnvioRequest $request = null;
 
-    public function __construct(?\Kavinsky\MRW\Type\TransmitirEnvioRequest $request)
+    public function __construct(?TransmitirEnvioRequest $request)
     {
         $this->request = $request;
     }
 
-    public function getRequest() : ?\Kavinsky\MRW\Type\TransmitirEnvioRequest
+    public function getRequest(): ?TransmitirEnvioRequest
     {
         return $this->request;
     }
 
-    public function withRequest(?\Kavinsky\MRW\Type\TransmitirEnvioRequest $request) : static
+    public function withRequest(?TransmitirEnvioRequest $request): static
     {
         $new = clone $this;
         $new->request = $request;
@@ -29,4 +26,3 @@ class TransmitirEnvio implements RequestInterface
         return $new;
     }
 }
-

@@ -2,7 +2,4 @@
 
 namespace Kavinsky\MRW\Type;
 
-abstract class BaseRequest
-{
-}
-
+abstract class BaseRequest {}

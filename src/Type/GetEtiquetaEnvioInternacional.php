@@ -6,22 +6,19 @@ use Phpro\SoapClient\Type\RequestInterface;
 
 class GetEtiquetaEnvioInternacional implements RequestInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\EtiquetaEnvioRequest
-     */
-    private ?\Kavinsky\MRW\Type\EtiquetaEnvioRequest $request = null;
+    private ?EtiquetaEnvioRequest $request = null;
 
-    public function __construct(?\Kavinsky\MRW\Type\EtiquetaEnvioRequest $request)
+    public function __construct(?EtiquetaEnvioRequest $request)
     {
         $this->request = $request;
     }
 
-    public function getRequest() : ?\Kavinsky\MRW\Type\EtiquetaEnvioRequest
+    public function getRequest(): ?EtiquetaEnvioRequest
     {
         return $this->request;
     }
 
-    public function withRequest(?\Kavinsky\MRW\Type\EtiquetaEnvioRequest $request) : static
+    public function withRequest(?EtiquetaEnvioRequest $request): static
     {
         $new = clone $this;
         $new->request = $request;
@@ -29,4 +26,3 @@ class GetEtiquetaEnvioInternacional implements RequestInterface
         return $new;
     }
 }
-

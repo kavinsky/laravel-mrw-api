@@ -6,32 +6,20 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class TransmEnvioResponse extends BaseResponse implements ResultInterface
 {
-    /**
-     * @var null | string
-     */
     private ?string $NumeroSolicitud = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroEnvio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Url = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\TransmEnvioResponse
-     */
     private ?\Kavinsky\MRW\Type\TransmEnvioResponse $TransmEnvioResult = null;
 
-    public function getNumeroSolicitud() : ?string
+    public function getNumeroSolicitud(): ?string
     {
         return $this->NumeroSolicitud;
     }
 
-    public function withNumeroSolicitud(?string $NumeroSolicitud) : static
+    public function withNumeroSolicitud(?string $NumeroSolicitud): static
     {
         $new = clone $this;
         $new->NumeroSolicitud = $NumeroSolicitud;
@@ -39,12 +27,12 @@ class TransmEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 
-    public function getNumeroEnvio() : ?string
+    public function getNumeroEnvio(): ?string
     {
         return $this->NumeroEnvio;
     }
 
-    public function withNumeroEnvio(?string $NumeroEnvio) : static
+    public function withNumeroEnvio(?string $NumeroEnvio): static
     {
         $new = clone $this;
         $new->NumeroEnvio = $NumeroEnvio;
@@ -52,12 +40,12 @@ class TransmEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 
-    public function getUrl() : ?string
+    public function getUrl(): ?string
     {
         return $this->Url;
     }
 
-    public function withUrl(?string $Url) : static
+    public function withUrl(?string $Url): static
     {
         $new = clone $this;
         $new->Url = $Url;
@@ -65,12 +53,12 @@ class TransmEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 
-    public function getTransmEnvioResult() : ?\Kavinsky\MRW\Type\TransmEnvioResponse
+    public function getTransmEnvioResult(): ?\Kavinsky\MRW\Type\TransmEnvioResponse
     {
         return $this->TransmEnvioResult;
     }
 
-    public function withTransmEnvioResult(?\Kavinsky\MRW\Type\TransmEnvioResponse $TransmEnvioResult) : static
+    public function withTransmEnvioResult(?\Kavinsky\MRW\Type\TransmEnvioResponse $TransmEnvioResult): static
     {
         $new = clone $this;
         $new->TransmEnvioResult = $TransmEnvioResult;
@@ -78,4 +66,3 @@ class TransmEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 }
-

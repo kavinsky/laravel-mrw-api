@@ -4,52 +4,28 @@ namespace Kavinsky\MRW\Type;
 
 class EtiquetaEnvioRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $NumeroEnvio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumerosEtiqueta = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $SeparadorNumerosEnvio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $FechaInicioEnvio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $FechaFinEnvio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TipoEtiquetaEnvio = null;
 
-    /**
-     * @var int
-     */
     private int $ReportTopMargin;
 
-    /**
-     * @var int
-     */
     private int $ReportLeftMargin;
 
-    public function getNumeroEnvio() : ?string
+    public function getNumeroEnvio(): ?string
     {
         return $this->NumeroEnvio;
     }
 
-    public function withNumeroEnvio(?string $NumeroEnvio) : static
+    public function withNumeroEnvio(?string $NumeroEnvio): static
     {
         $new = clone $this;
         $new->NumeroEnvio = $NumeroEnvio;
@@ -57,12 +33,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getNumerosEtiqueta() : ?string
+    public function getNumerosEtiqueta(): ?string
     {
         return $this->NumerosEtiqueta;
     }
 
-    public function withNumerosEtiqueta(?string $NumerosEtiqueta) : static
+    public function withNumerosEtiqueta(?string $NumerosEtiqueta): static
     {
         $new = clone $this;
         $new->NumerosEtiqueta = $NumerosEtiqueta;
@@ -70,12 +46,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getSeparadorNumerosEnvio() : ?string
+    public function getSeparadorNumerosEnvio(): ?string
     {
         return $this->SeparadorNumerosEnvio;
     }
 
-    public function withSeparadorNumerosEnvio(?string $SeparadorNumerosEnvio) : static
+    public function withSeparadorNumerosEnvio(?string $SeparadorNumerosEnvio): static
     {
         $new = clone $this;
         $new->SeparadorNumerosEnvio = $SeparadorNumerosEnvio;
@@ -83,12 +59,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getFechaInicioEnvio() : ?string
+    public function getFechaInicioEnvio(): ?string
     {
         return $this->FechaInicioEnvio;
     }
 
-    public function withFechaInicioEnvio(?string $FechaInicioEnvio) : static
+    public function withFechaInicioEnvio(?string $FechaInicioEnvio): static
     {
         $new = clone $this;
         $new->FechaInicioEnvio = $FechaInicioEnvio;
@@ -96,12 +72,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getFechaFinEnvio() : ?string
+    public function getFechaFinEnvio(): ?string
     {
         return $this->FechaFinEnvio;
     }
 
-    public function withFechaFinEnvio(?string $FechaFinEnvio) : static
+    public function withFechaFinEnvio(?string $FechaFinEnvio): static
     {
         $new = clone $this;
         $new->FechaFinEnvio = $FechaFinEnvio;
@@ -109,12 +85,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getTipoEtiquetaEnvio() : ?string
+    public function getTipoEtiquetaEnvio(): ?string
     {
         return $this->TipoEtiquetaEnvio;
     }
 
-    public function withTipoEtiquetaEnvio(?string $TipoEtiquetaEnvio) : static
+    public function withTipoEtiquetaEnvio(?string $TipoEtiquetaEnvio): static
     {
         $new = clone $this;
         $new->TipoEtiquetaEnvio = $TipoEtiquetaEnvio;
@@ -122,12 +98,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getReportTopMargin() : int
+    public function getReportTopMargin(): int
     {
         return $this->ReportTopMargin;
     }
 
-    public function withReportTopMargin(int $ReportTopMargin) : static
+    public function withReportTopMargin(int $ReportTopMargin): static
     {
         $new = clone $this;
         $new->ReportTopMargin = $ReportTopMargin;
@@ -135,12 +111,12 @@ class EtiquetaEnvioRequest
         return $new;
     }
 
-    public function getReportLeftMargin() : int
+    public function getReportLeftMargin(): int
     {
         return $this->ReportLeftMargin;
     }
 
-    public function withReportLeftMargin(int $ReportLeftMargin) : static
+    public function withReportLeftMargin(int $ReportLeftMargin): static
     {
         $new = clone $this;
         $new->ReportLeftMargin = $ReportLeftMargin;
@@ -148,4 +124,3 @@ class EtiquetaEnvioRequest
         return $new;
     }
 }
-

@@ -4,17 +4,14 @@ namespace Kavinsky\MRW\Type;
 
 class NotificacionIntRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $TelefonoSMS = null;
 
-    public function getTelefonoSMS() : ?string
+    public function getTelefonoSMS(): ?string
     {
         return $this->TelefonoSMS;
     }
 
-    public function withTelefonoSMS(?string $TelefonoSMS) : static
+    public function withTelefonoSMS(?string $TelefonoSMS): static
     {
         $new = clone $this;
         $new->TelefonoSMS = $TelefonoSMS;
@@ -22,4 +19,3 @@ class NotificacionIntRequest
         return $new;
     }
 }
-

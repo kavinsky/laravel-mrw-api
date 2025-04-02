@@ -4,32 +4,20 @@ namespace Kavinsky\MRW\Type;
 
 class TransmEnvioRequest extends BaseRequest
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\ModificaDatosEnvioRequest
-     */
-    private ?\Kavinsky\MRW\Type\ModificaDatosEnvioRequest $ModificaDatosEnvio = null;
+    private ?ModificaDatosEnvioRequest $ModificaDatosEnvio = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\DatosRemitenteRequest
-     */
-    private ?\Kavinsky\MRW\Type\DatosRemitenteRequest $DatosRecogida = null;
+    private ?DatosRemitenteRequest $DatosRecogida = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\DatosDestinatarioRequest
-     */
-    private ?\Kavinsky\MRW\Type\DatosDestinatarioRequest $DatosEntrega = null;
+    private ?DatosDestinatarioRequest $DatosEntrega = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\DatosServicioRequest
-     */
-    private ?\Kavinsky\MRW\Type\DatosServicioRequest $DatosServicio = null;
+    private ?DatosServicioRequest $DatosServicio = null;
 
-    public function getModificaDatosEnvio() : ?\Kavinsky\MRW\Type\ModificaDatosEnvioRequest
+    public function getModificaDatosEnvio(): ?ModificaDatosEnvioRequest
     {
         return $this->ModificaDatosEnvio;
     }
 
-    public function withModificaDatosEnvio(?\Kavinsky\MRW\Type\ModificaDatosEnvioRequest $ModificaDatosEnvio) : static
+    public function withModificaDatosEnvio(?ModificaDatosEnvioRequest $ModificaDatosEnvio): static
     {
         $new = clone $this;
         $new->ModificaDatosEnvio = $ModificaDatosEnvio;
@@ -37,12 +25,12 @@ class TransmEnvioRequest extends BaseRequest
         return $new;
     }
 
-    public function getDatosRecogida() : ?\Kavinsky\MRW\Type\DatosRemitenteRequest
+    public function getDatosRecogida(): ?DatosRemitenteRequest
     {
         return $this->DatosRecogida;
     }
 
-    public function withDatosRecogida(?\Kavinsky\MRW\Type\DatosRemitenteRequest $DatosRecogida) : static
+    public function withDatosRecogida(?DatosRemitenteRequest $DatosRecogida): static
     {
         $new = clone $this;
         $new->DatosRecogida = $DatosRecogida;
@@ -50,12 +38,12 @@ class TransmEnvioRequest extends BaseRequest
         return $new;
     }
 
-    public function getDatosEntrega() : ?\Kavinsky\MRW\Type\DatosDestinatarioRequest
+    public function getDatosEntrega(): ?DatosDestinatarioRequest
     {
         return $this->DatosEntrega;
     }
 
-    public function withDatosEntrega(?\Kavinsky\MRW\Type\DatosDestinatarioRequest $DatosEntrega) : static
+    public function withDatosEntrega(?DatosDestinatarioRequest $DatosEntrega): static
     {
         $new = clone $this;
         $new->DatosEntrega = $DatosEntrega;
@@ -63,12 +51,12 @@ class TransmEnvioRequest extends BaseRequest
         return $new;
     }
 
-    public function getDatosServicio() : ?\Kavinsky\MRW\Type\DatosServicioRequest
+    public function getDatosServicio(): ?DatosServicioRequest
     {
         return $this->DatosServicio;
     }
 
-    public function withDatosServicio(?\Kavinsky\MRW\Type\DatosServicioRequest $DatosServicio) : static
+    public function withDatosServicio(?DatosServicioRequest $DatosServicio): static
     {
         $new = clone $this;
         $new->DatosServicio = $DatosServicio;
@@ -76,4 +64,3 @@ class TransmEnvioRequest extends BaseRequest
         return $new;
     }
 }
-

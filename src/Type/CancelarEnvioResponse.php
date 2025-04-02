@@ -6,27 +6,18 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class CancelarEnvioResponse extends BaseResponse implements ResultInterface
 {
-    /**
-     * @var null | string
-     */
     private ?string $NumeroSolicitud = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroEnvio = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\CancelarEnvioResponse
-     */
     private ?\Kavinsky\MRW\Type\CancelarEnvioResponse $CancelarEnvioResult = null;
 
-    public function getNumeroSolicitud() : ?string
+    public function getNumeroSolicitud(): ?string
     {
         return $this->NumeroSolicitud;
     }
 
-    public function withNumeroSolicitud(?string $NumeroSolicitud) : static
+    public function withNumeroSolicitud(?string $NumeroSolicitud): static
     {
         $new = clone $this;
         $new->NumeroSolicitud = $NumeroSolicitud;
@@ -34,12 +25,12 @@ class CancelarEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 
-    public function getNumeroEnvio() : ?string
+    public function getNumeroEnvio(): ?string
     {
         return $this->NumeroEnvio;
     }
 
-    public function withNumeroEnvio(?string $NumeroEnvio) : static
+    public function withNumeroEnvio(?string $NumeroEnvio): static
     {
         $new = clone $this;
         $new->NumeroEnvio = $NumeroEnvio;
@@ -47,12 +38,12 @@ class CancelarEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 
-    public function getCancelarEnvioResult() : ?\Kavinsky\MRW\Type\CancelarEnvioResponse
+    public function getCancelarEnvioResult(): ?\Kavinsky\MRW\Type\CancelarEnvioResponse
     {
         return $this->CancelarEnvioResult;
     }
 
-    public function withCancelarEnvioResult(?\Kavinsky\MRW\Type\CancelarEnvioResponse $CancelarEnvioResult) : static
+    public function withCancelarEnvioResult(?\Kavinsky\MRW\Type\CancelarEnvioResponse $CancelarEnvioResult): static
     {
         $new = clone $this;
         $new->CancelarEnvioResult = $CancelarEnvioResult;
@@ -60,4 +51,3 @@ class CancelarEnvioResponse extends BaseResponse implements ResultInterface
         return $new;
     }
 }
-

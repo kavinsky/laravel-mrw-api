@@ -4,82 +4,40 @@ namespace Kavinsky\MRW\Type;
 
 class DireccionPuntoDTO
 {
-    /**
-     * @var null | string
-     */
     private ?string $Pais = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPostal = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Region = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Provincia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Poblacion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TipoVia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NombreVia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroVia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Resto = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Google = null;
 
-    /**
-     * @var null | float
-     */
     private ?float $Latitud = null;
 
-    /**
-     * @var null | float
-     */
     private ?float $Longitud = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Zona = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $GrupoZona = null;
 
-    public function getPais() : ?string
+    public function getPais(): ?string
     {
         return $this->Pais;
     }
 
-    public function withPais(?string $Pais) : static
+    public function withPais(?string $Pais): static
     {
         $new = clone $this;
         $new->Pais = $Pais;
@@ -87,12 +45,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getCodigoPostal() : ?string
+    public function getCodigoPostal(): ?string
     {
         return $this->CodigoPostal;
     }
 
-    public function withCodigoPostal(?string $CodigoPostal) : static
+    public function withCodigoPostal(?string $CodigoPostal): static
     {
         $new = clone $this;
         $new->CodigoPostal = $CodigoPostal;
@@ -100,12 +58,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getRegion() : ?string
+    public function getRegion(): ?string
     {
         return $this->Region;
     }
 
-    public function withRegion(?string $Region) : static
+    public function withRegion(?string $Region): static
     {
         $new = clone $this;
         $new->Region = $Region;
@@ -113,12 +71,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getProvincia() : ?string
+    public function getProvincia(): ?string
     {
         return $this->Provincia;
     }
 
-    public function withProvincia(?string $Provincia) : static
+    public function withProvincia(?string $Provincia): static
     {
         $new = clone $this;
         $new->Provincia = $Provincia;
@@ -126,12 +84,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getPoblacion() : ?string
+    public function getPoblacion(): ?string
     {
         return $this->Poblacion;
     }
 
-    public function withPoblacion(?string $Poblacion) : static
+    public function withPoblacion(?string $Poblacion): static
     {
         $new = clone $this;
         $new->Poblacion = $Poblacion;
@@ -139,12 +97,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getTipoVia() : ?string
+    public function getTipoVia(): ?string
     {
         return $this->TipoVia;
     }
 
-    public function withTipoVia(?string $TipoVia) : static
+    public function withTipoVia(?string $TipoVia): static
     {
         $new = clone $this;
         $new->TipoVia = $TipoVia;
@@ -152,12 +110,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getNombreVia() : ?string
+    public function getNombreVia(): ?string
     {
         return $this->NombreVia;
     }
 
-    public function withNombreVia(?string $NombreVia) : static
+    public function withNombreVia(?string $NombreVia): static
     {
         $new = clone $this;
         $new->NombreVia = $NombreVia;
@@ -165,12 +123,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getNumeroVia() : ?string
+    public function getNumeroVia(): ?string
     {
         return $this->NumeroVia;
     }
 
-    public function withNumeroVia(?string $NumeroVia) : static
+    public function withNumeroVia(?string $NumeroVia): static
     {
         $new = clone $this;
         $new->NumeroVia = $NumeroVia;
@@ -178,12 +136,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getResto() : ?string
+    public function getResto(): ?string
     {
         return $this->Resto;
     }
 
-    public function withResto(?string $Resto) : static
+    public function withResto(?string $Resto): static
     {
         $new = clone $this;
         $new->Resto = $Resto;
@@ -191,12 +149,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getGoogle() : ?string
+    public function getGoogle(): ?string
     {
         return $this->Google;
     }
 
-    public function withGoogle(?string $Google) : static
+    public function withGoogle(?string $Google): static
     {
         $new = clone $this;
         $new->Google = $Google;
@@ -204,12 +162,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getLatitud() : ?float
+    public function getLatitud(): ?float
     {
         return $this->Latitud;
     }
 
-    public function withLatitud(?float $Latitud) : static
+    public function withLatitud(?float $Latitud): static
     {
         $new = clone $this;
         $new->Latitud = $Latitud;
@@ -217,12 +175,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getLongitud() : ?float
+    public function getLongitud(): ?float
     {
         return $this->Longitud;
     }
 
-    public function withLongitud(?float $Longitud) : static
+    public function withLongitud(?float $Longitud): static
     {
         $new = clone $this;
         $new->Longitud = $Longitud;
@@ -230,12 +188,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getZona() : ?string
+    public function getZona(): ?string
     {
         return $this->Zona;
     }
 
-    public function withZona(?string $Zona) : static
+    public function withZona(?string $Zona): static
     {
         $new = clone $this;
         $new->Zona = $Zona;
@@ -243,12 +201,12 @@ class DireccionPuntoDTO
         return $new;
     }
 
-    public function getGrupoZona() : ?string
+    public function getGrupoZona(): ?string
     {
         return $this->GrupoZona;
     }
 
-    public function withGrupoZona(?string $GrupoZona) : static
+    public function withGrupoZona(?string $GrupoZona): static
     {
         $new = clone $this;
         $new->GrupoZona = $GrupoZona;
@@ -256,4 +214,3 @@ class DireccionPuntoDTO
         return $new;
     }
 }
-

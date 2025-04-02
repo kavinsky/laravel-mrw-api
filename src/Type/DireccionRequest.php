@@ -4,97 +4,46 @@ namespace Kavinsky\MRW\Type;
 
 class DireccionRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $CodigoDireccion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoTipoVia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Via = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Numero = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Resto = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPostal = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Poblacion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Provincia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Estado = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPais = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TipoPuntoEntrega = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPuntoEntrega = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoFranquiciaAsociadaPuntoEntrega = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $TipoPuntoRecogida = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPuntoRecogida = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoFranquiciaAsociadaPuntoRecogida = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Agencia = null;
 
-    public function getCodigoDireccion() : ?string
+    public function getCodigoDireccion(): ?string
     {
         return $this->CodigoDireccion;
     }
 
-    public function withCodigoDireccion(?string $CodigoDireccion) : static
+    public function withCodigoDireccion(?string $CodigoDireccion): static
     {
         $new = clone $this;
         $new->CodigoDireccion = $CodigoDireccion;
@@ -102,12 +51,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoTipoVia() : ?string
+    public function getCodigoTipoVia(): ?string
     {
         return $this->CodigoTipoVia;
     }
 
-    public function withCodigoTipoVia(?string $CodigoTipoVia) : static
+    public function withCodigoTipoVia(?string $CodigoTipoVia): static
     {
         $new = clone $this;
         $new->CodigoTipoVia = $CodigoTipoVia;
@@ -115,12 +64,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getVia() : ?string
+    public function getVia(): ?string
     {
         return $this->Via;
     }
 
-    public function withVia(?string $Via) : static
+    public function withVia(?string $Via): static
     {
         $new = clone $this;
         $new->Via = $Via;
@@ -128,12 +77,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getNumero() : ?string
+    public function getNumero(): ?string
     {
         return $this->Numero;
     }
 
-    public function withNumero(?string $Numero) : static
+    public function withNumero(?string $Numero): static
     {
         $new = clone $this;
         $new->Numero = $Numero;
@@ -141,12 +90,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getResto() : ?string
+    public function getResto(): ?string
     {
         return $this->Resto;
     }
 
-    public function withResto(?string $Resto) : static
+    public function withResto(?string $Resto): static
     {
         $new = clone $this;
         $new->Resto = $Resto;
@@ -154,12 +103,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoPostal() : ?string
+    public function getCodigoPostal(): ?string
     {
         return $this->CodigoPostal;
     }
 
-    public function withCodigoPostal(?string $CodigoPostal) : static
+    public function withCodigoPostal(?string $CodigoPostal): static
     {
         $new = clone $this;
         $new->CodigoPostal = $CodigoPostal;
@@ -167,12 +116,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getPoblacion() : ?string
+    public function getPoblacion(): ?string
     {
         return $this->Poblacion;
     }
 
-    public function withPoblacion(?string $Poblacion) : static
+    public function withPoblacion(?string $Poblacion): static
     {
         $new = clone $this;
         $new->Poblacion = $Poblacion;
@@ -180,12 +129,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getProvincia() : ?string
+    public function getProvincia(): ?string
     {
         return $this->Provincia;
     }
 
-    public function withProvincia(?string $Provincia) : static
+    public function withProvincia(?string $Provincia): static
     {
         $new = clone $this;
         $new->Provincia = $Provincia;
@@ -193,12 +142,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getEstado() : ?string
+    public function getEstado(): ?string
     {
         return $this->Estado;
     }
 
-    public function withEstado(?string $Estado) : static
+    public function withEstado(?string $Estado): static
     {
         $new = clone $this;
         $new->Estado = $Estado;
@@ -206,12 +155,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoPais() : ?string
+    public function getCodigoPais(): ?string
     {
         return $this->CodigoPais;
     }
 
-    public function withCodigoPais(?string $CodigoPais) : static
+    public function withCodigoPais(?string $CodigoPais): static
     {
         $new = clone $this;
         $new->CodigoPais = $CodigoPais;
@@ -219,12 +168,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getTipoPuntoEntrega() : ?string
+    public function getTipoPuntoEntrega(): ?string
     {
         return $this->TipoPuntoEntrega;
     }
 
-    public function withTipoPuntoEntrega(?string $TipoPuntoEntrega) : static
+    public function withTipoPuntoEntrega(?string $TipoPuntoEntrega): static
     {
         $new = clone $this;
         $new->TipoPuntoEntrega = $TipoPuntoEntrega;
@@ -232,12 +181,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoPuntoEntrega() : ?string
+    public function getCodigoPuntoEntrega(): ?string
     {
         return $this->CodigoPuntoEntrega;
     }
 
-    public function withCodigoPuntoEntrega(?string $CodigoPuntoEntrega) : static
+    public function withCodigoPuntoEntrega(?string $CodigoPuntoEntrega): static
     {
         $new = clone $this;
         $new->CodigoPuntoEntrega = $CodigoPuntoEntrega;
@@ -245,12 +194,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoFranquiciaAsociadaPuntoEntrega() : ?string
+    public function getCodigoFranquiciaAsociadaPuntoEntrega(): ?string
     {
         return $this->CodigoFranquiciaAsociadaPuntoEntrega;
     }
 
-    public function withCodigoFranquiciaAsociadaPuntoEntrega(?string $CodigoFranquiciaAsociadaPuntoEntrega) : static
+    public function withCodigoFranquiciaAsociadaPuntoEntrega(?string $CodigoFranquiciaAsociadaPuntoEntrega): static
     {
         $new = clone $this;
         $new->CodigoFranquiciaAsociadaPuntoEntrega = $CodigoFranquiciaAsociadaPuntoEntrega;
@@ -258,12 +207,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getTipoPuntoRecogida() : ?string
+    public function getTipoPuntoRecogida(): ?string
     {
         return $this->TipoPuntoRecogida;
     }
 
-    public function withTipoPuntoRecogida(?string $TipoPuntoRecogida) : static
+    public function withTipoPuntoRecogida(?string $TipoPuntoRecogida): static
     {
         $new = clone $this;
         $new->TipoPuntoRecogida = $TipoPuntoRecogida;
@@ -271,12 +220,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoPuntoRecogida() : ?string
+    public function getCodigoPuntoRecogida(): ?string
     {
         return $this->CodigoPuntoRecogida;
     }
 
-    public function withCodigoPuntoRecogida(?string $CodigoPuntoRecogida) : static
+    public function withCodigoPuntoRecogida(?string $CodigoPuntoRecogida): static
     {
         $new = clone $this;
         $new->CodigoPuntoRecogida = $CodigoPuntoRecogida;
@@ -284,12 +233,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getCodigoFranquiciaAsociadaPuntoRecogida() : ?string
+    public function getCodigoFranquiciaAsociadaPuntoRecogida(): ?string
     {
         return $this->CodigoFranquiciaAsociadaPuntoRecogida;
     }
 
-    public function withCodigoFranquiciaAsociadaPuntoRecogida(?string $CodigoFranquiciaAsociadaPuntoRecogida) : static
+    public function withCodigoFranquiciaAsociadaPuntoRecogida(?string $CodigoFranquiciaAsociadaPuntoRecogida): static
     {
         $new = clone $this;
         $new->CodigoFranquiciaAsociadaPuntoRecogida = $CodigoFranquiciaAsociadaPuntoRecogida;
@@ -297,12 +246,12 @@ class DireccionRequest
         return $new;
     }
 
-    public function getAgencia() : ?string
+    public function getAgencia(): ?string
     {
         return $this->Agencia;
     }
 
-    public function withAgencia(?string $Agencia) : static
+    public function withAgencia(?string $Agencia): static
     {
         $new = clone $this;
         $new->Agencia = $Agencia;
@@ -310,4 +259,3 @@ class DireccionRequest
         return $new;
     }
 }
-

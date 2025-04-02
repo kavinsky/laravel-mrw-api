@@ -4,77 +4,38 @@ namespace Kavinsky\MRW\Type;
 
 class DatosServicioIntRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $Fecha = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Referencia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoServicio = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $DescripcionServicio = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\ArrayOfBultoIntRequest
-     */
-    private ?\Kavinsky\MRW\Type\ArrayOfBultoIntRequest $Bultos = null;
+    private ?ArrayOfBultoIntRequest $Bultos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroBultos = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Peso = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ServicioEspecial = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoMoneda = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ValorEstadistico = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $ValorEstadisticoEuros = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\NotificacionIntRequest
-     */
-    private ?\Kavinsky\MRW\Type\NotificacionIntRequest $NotificacionSMS = null;
+    private ?NotificacionIntRequest $NotificacionSMS = null;
 
-    /**
-     * @var null | \Kavinsky\MRW\Type\SeguroOpcionalRequest
-     */
-    private ?\Kavinsky\MRW\Type\SeguroOpcionalRequest $SeguroOpcional = null;
+    private ?SeguroOpcionalRequest $SeguroOpcional = null;
 
-    public function getFecha() : ?string
+    public function getFecha(): ?string
     {
         return $this->Fecha;
     }
 
-    public function withFecha(?string $Fecha) : static
+    public function withFecha(?string $Fecha): static
     {
         $new = clone $this;
         $new->Fecha = $Fecha;
@@ -82,12 +43,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getReferencia() : ?string
+    public function getReferencia(): ?string
     {
         return $this->Referencia;
     }
 
-    public function withReferencia(?string $Referencia) : static
+    public function withReferencia(?string $Referencia): static
     {
         $new = clone $this;
         $new->Referencia = $Referencia;
@@ -95,12 +56,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getCodigoServicio() : ?string
+    public function getCodigoServicio(): ?string
     {
         return $this->CodigoServicio;
     }
 
-    public function withCodigoServicio(?string $CodigoServicio) : static
+    public function withCodigoServicio(?string $CodigoServicio): static
     {
         $new = clone $this;
         $new->CodigoServicio = $CodigoServicio;
@@ -108,12 +69,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getDescripcionServicio() : ?string
+    public function getDescripcionServicio(): ?string
     {
         return $this->DescripcionServicio;
     }
 
-    public function withDescripcionServicio(?string $DescripcionServicio) : static
+    public function withDescripcionServicio(?string $DescripcionServicio): static
     {
         $new = clone $this;
         $new->DescripcionServicio = $DescripcionServicio;
@@ -121,12 +82,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getBultos() : ?\Kavinsky\MRW\Type\ArrayOfBultoIntRequest
+    public function getBultos(): ?ArrayOfBultoIntRequest
     {
         return $this->Bultos;
     }
 
-    public function withBultos(?\Kavinsky\MRW\Type\ArrayOfBultoIntRequest $Bultos) : static
+    public function withBultos(?ArrayOfBultoIntRequest $Bultos): static
     {
         $new = clone $this;
         $new->Bultos = $Bultos;
@@ -134,12 +95,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getNumeroBultos() : ?string
+    public function getNumeroBultos(): ?string
     {
         return $this->NumeroBultos;
     }
 
-    public function withNumeroBultos(?string $NumeroBultos) : static
+    public function withNumeroBultos(?string $NumeroBultos): static
     {
         $new = clone $this;
         $new->NumeroBultos = $NumeroBultos;
@@ -147,12 +108,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getPeso() : ?string
+    public function getPeso(): ?string
     {
         return $this->Peso;
     }
 
-    public function withPeso(?string $Peso) : static
+    public function withPeso(?string $Peso): static
     {
         $new = clone $this;
         $new->Peso = $Peso;
@@ -160,12 +121,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getServicioEspecial() : ?string
+    public function getServicioEspecial(): ?string
     {
         return $this->ServicioEspecial;
     }
 
-    public function withServicioEspecial(?string $ServicioEspecial) : static
+    public function withServicioEspecial(?string $ServicioEspecial): static
     {
         $new = clone $this;
         $new->ServicioEspecial = $ServicioEspecial;
@@ -173,12 +134,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getCodigoMoneda() : ?string
+    public function getCodigoMoneda(): ?string
     {
         return $this->CodigoMoneda;
     }
 
-    public function withCodigoMoneda(?string $CodigoMoneda) : static
+    public function withCodigoMoneda(?string $CodigoMoneda): static
     {
         $new = clone $this;
         $new->CodigoMoneda = $CodigoMoneda;
@@ -186,12 +147,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getValorEstadistico() : ?string
+    public function getValorEstadistico(): ?string
     {
         return $this->ValorEstadistico;
     }
 
-    public function withValorEstadistico(?string $ValorEstadistico) : static
+    public function withValorEstadistico(?string $ValorEstadistico): static
     {
         $new = clone $this;
         $new->ValorEstadistico = $ValorEstadistico;
@@ -199,12 +160,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getValorEstadisticoEuros() : ?string
+    public function getValorEstadisticoEuros(): ?string
     {
         return $this->ValorEstadisticoEuros;
     }
 
-    public function withValorEstadisticoEuros(?string $ValorEstadisticoEuros) : static
+    public function withValorEstadisticoEuros(?string $ValorEstadisticoEuros): static
     {
         $new = clone $this;
         $new->ValorEstadisticoEuros = $ValorEstadisticoEuros;
@@ -212,12 +173,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getNotificacionSMS() : ?\Kavinsky\MRW\Type\NotificacionIntRequest
+    public function getNotificacionSMS(): ?NotificacionIntRequest
     {
         return $this->NotificacionSMS;
     }
 
-    public function withNotificacionSMS(?\Kavinsky\MRW\Type\NotificacionIntRequest $NotificacionSMS) : static
+    public function withNotificacionSMS(?NotificacionIntRequest $NotificacionSMS): static
     {
         $new = clone $this;
         $new->NotificacionSMS = $NotificacionSMS;
@@ -225,12 +186,12 @@ class DatosServicioIntRequest
         return $new;
     }
 
-    public function getSeguroOpcional() : ?\Kavinsky\MRW\Type\SeguroOpcionalRequest
+    public function getSeguroOpcional(): ?SeguroOpcionalRequest
     {
         return $this->SeguroOpcional;
     }
 
-    public function withSeguroOpcional(?\Kavinsky\MRW\Type\SeguroOpcionalRequest $SeguroOpcional) : static
+    public function withSeguroOpcional(?SeguroOpcionalRequest $SeguroOpcional): static
     {
         $new = clone $this;
         $new->SeguroOpcional = $SeguroOpcional;
@@ -238,4 +199,3 @@ class DatosServicioIntRequest
         return $new;
     }
 }
-

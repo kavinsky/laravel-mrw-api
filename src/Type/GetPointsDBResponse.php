@@ -6,17 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GetPointsDBResponse implements ResultInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\PointsResponse
-     */
-    private ?\Kavinsky\MRW\Type\PointsResponse $GetPointsDBResult = null;
+    private ?PointsResponse $GetPointsDBResult = null;
 
-    public function getGetPointsDBResult() : ?\Kavinsky\MRW\Type\PointsResponse
+    public function getGetPointsDBResult(): ?PointsResponse
     {
         return $this->GetPointsDBResult;
     }
 
-    public function withGetPointsDBResult(?\Kavinsky\MRW\Type\PointsResponse $GetPointsDBResult) : static
+    public function withGetPointsDBResult(?PointsResponse $GetPointsDBResult): static
     {
         $new = clone $this;
         $new->GetPointsDBResult = $GetPointsDBResult;
@@ -24,4 +21,3 @@ class GetPointsDBResponse implements ResultInterface
         return $new;
     }
 }
-

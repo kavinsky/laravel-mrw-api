@@ -4,47 +4,26 @@ namespace Kavinsky\MRW\Type;
 
 class BultoRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $Alto = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Largo = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Ancho = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Dimension = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Referencia = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Peso = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $NumeroBulto = null;
 
-    public function getAlto() : ?string
+    public function getAlto(): ?string
     {
         return $this->Alto;
     }
 
-    public function withAlto(?string $Alto) : static
+    public function withAlto(?string $Alto): static
     {
         $new = clone $this;
         $new->Alto = $Alto;
@@ -52,12 +31,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getLargo() : ?string
+    public function getLargo(): ?string
     {
         return $this->Largo;
     }
 
-    public function withLargo(?string $Largo) : static
+    public function withLargo(?string $Largo): static
     {
         $new = clone $this;
         $new->Largo = $Largo;
@@ -65,12 +44,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getAncho() : ?string
+    public function getAncho(): ?string
     {
         return $this->Ancho;
     }
 
-    public function withAncho(?string $Ancho) : static
+    public function withAncho(?string $Ancho): static
     {
         $new = clone $this;
         $new->Ancho = $Ancho;
@@ -78,12 +57,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getDimension() : ?string
+    public function getDimension(): ?string
     {
         return $this->Dimension;
     }
 
-    public function withDimension(?string $Dimension) : static
+    public function withDimension(?string $Dimension): static
     {
         $new = clone $this;
         $new->Dimension = $Dimension;
@@ -91,12 +70,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getReferencia() : ?string
+    public function getReferencia(): ?string
     {
         return $this->Referencia;
     }
 
-    public function withReferencia(?string $Referencia) : static
+    public function withReferencia(?string $Referencia): static
     {
         $new = clone $this;
         $new->Referencia = $Referencia;
@@ -104,12 +83,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getPeso() : ?string
+    public function getPeso(): ?string
     {
         return $this->Peso;
     }
 
-    public function withPeso(?string $Peso) : static
+    public function withPeso(?string $Peso): static
     {
         $new = clone $this;
         $new->Peso = $Peso;
@@ -117,12 +96,12 @@ class BultoRequest
         return $new;
     }
 
-    public function getNumeroBulto() : ?string
+    public function getNumeroBulto(): ?string
     {
         return $this->NumeroBulto;
     }
 
-    public function withNumeroBulto(?string $NumeroBulto) : static
+    public function withNumeroBulto(?string $NumeroBulto): static
     {
         $new = clone $this;
         $new->NumeroBulto = $NumeroBulto;
@@ -130,4 +109,3 @@ class BultoRequest
         return $new;
     }
 }
-

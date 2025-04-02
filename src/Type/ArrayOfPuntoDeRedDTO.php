@@ -5,16 +5,24 @@ namespace Kavinsky\MRW\Type;
 class ArrayOfPuntoDeRedDTO
 {
     /**
-     * @var null | array<int<0,max>, \Kavinsky\MRW\Type\PuntoDeRedDTO>
+     * @var null|array<int<0, max>, PuntoDeRedDTO>
      */
     private ?array $PuntoDeRedDTO = null;
 
-    public function getPuntoDeRedDTO() : ?array
+    /**
+     * @return \Kavinsky\MRW\Type\PuntoDeRedDTO[]|null
+     */
+    public function getPuntoDeRedDTO(): ?array
     {
         return $this->PuntoDeRedDTO;
     }
 
-    public function withPuntoDeRedDTO(?array $PuntoDeRedDTO) : static
+    /**
+     * @param PuntoDeRedDTO[]|null $PuntoDeRedDTO
+     *
+     * @return $this
+     */
+    public function withPuntoDeRedDTO(?array $PuntoDeRedDTO): static
     {
         $new = clone $this;
         $new->PuntoDeRedDTO = $PuntoDeRedDTO;
@@ -22,4 +30,3 @@ class ArrayOfPuntoDeRedDTO
         return $new;
     }
 }
-

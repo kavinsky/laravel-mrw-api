@@ -4,22 +4,16 @@ namespace Kavinsky\MRW\Type;
 
 abstract class BaseResponse
 {
-    /**
-     * @var null | string
-     */
     private ?string $Estado = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Mensaje = null;
 
-    public function getEstado() : ?string
+    public function getEstado(): ?string
     {
         return $this->Estado;
     }
 
-    public function withEstado(?string $Estado) : static
+    public function withEstado(?string $Estado): static
     {
         $new = clone $this;
         $new->Estado = $Estado;
@@ -27,12 +21,12 @@ abstract class BaseResponse
         return $new;
     }
 
-    public function getMensaje() : ?string
+    public function getMensaje(): ?string
     {
         return $this->Mensaje;
     }
 
-    public function withMensaje(?string $Mensaje) : static
+    public function withMensaje(?string $Mensaje): static
     {
         $new = clone $this;
         $new->Mensaje = $Mensaje;
@@ -40,4 +34,3 @@ abstract class BaseResponse
         return $new;
     }
 }
-

@@ -4,17 +4,14 @@ namespace Kavinsky\MRW\Type;
 
 class PointsRequest extends BaseRequest
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\PointRequest
-     */
-    private ?\Kavinsky\MRW\Type\PointRequest $Point = null;
+    private ?PointRequest $Point = null;
 
-    public function getPoint() : ?\Kavinsky\MRW\Type\PointRequest
+    public function getPoint(): ?PointRequest
     {
         return $this->Point;
     }
 
-    public function withPoint(?\Kavinsky\MRW\Type\PointRequest $Point) : static
+    public function withPoint(?PointRequest $Point): static
     {
         $new = clone $this;
         $new->Point = $Point;
@@ -22,4 +19,3 @@ class PointsRequest extends BaseRequest
         return $new;
     }
 }
-

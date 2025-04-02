@@ -1,10 +1,10 @@
 <?php
 
 use Phpro\SoapClient\CodeGenerator\Assembler;
-use Phpro\SoapClient\CodeGenerator\Rules;
 use Phpro\SoapClient\CodeGenerator\Config\Config;
-use Phpro\SoapClient\Soap\EngineOptions;
+use Phpro\SoapClient\CodeGenerator\Rules;
 use Phpro\SoapClient\Soap\DefaultEngineFactory;
+use Phpro\SoapClient\Soap\EngineOptions;
 
 return Config::create()
     ->setEngine($engine = DefaultEngineFactory::create(
@@ -19,18 +19,18 @@ return Config::create()
     ->setClassMapName('MRWClassmap')
     ->setClassMapNamespace('Kavinsky\MRW')
     ->addRule(new Rules\AssembleRule(new Assembler\GetterAssembler(
-        (new Assembler\GetterAssemblerOptions())->withDocBlocks(false)
+        (new Assembler\GetterAssemblerOptions)->withDocBlocks(false)
     )))
     ->addRule(new Rules\AssembleRule(new Assembler\ImmutableSetterAssembler(
-        (new Assembler\ImmutableSetterAssemblerOptions())->withDocBlocks(false)
+        (new Assembler\ImmutableSetterAssemblerOptions)->withDocBlocks(false)
     )))
     ->addRule(
         new Rules\IsRequestRule(
             $engine->getMetadata(),
             new Rules\MultiRule([
-                new Rules\AssembleRule(new Assembler\RequestAssembler()),
+                new Rules\AssembleRule(new Assembler\RequestAssembler),
                 new Rules\AssembleRule(new Assembler\ConstructorAssembler(
-                    (new Assembler\ConstructorAssemblerOptions())->withDocBlocks(false)
+                    (new Assembler\ConstructorAssemblerOptions)->withDocBlocks(false)
                 )),
             ])
         )
@@ -39,20 +39,19 @@ return Config::create()
         new Rules\IsResultRule(
             $engine->getMetadata(),
             new Rules\MultiRule([
-                new Rules\AssembleRule(new Assembler\ResultAssembler()),
+                new Rules\AssembleRule(new Assembler\ResultAssembler),
             ])
         )
     )
     ->addRule(
         new Rules\IsExtendingTypeRule(
             $engine->getMetadata(),
-            new Rules\AssembleRule(new Assembler\ExtendingTypeAssembler())
+            new Rules\AssembleRule(new Assembler\ExtendingTypeAssembler)
         )
     )
     ->addRule(
         new Rules\IsAbstractTypeRule(
             $engine->getMetadata(),
-            new Rules\AssembleRule(new Assembler\AbstractClassAssembler())
+            new Rules\AssembleRule(new Assembler\AbstractClassAssembler)
         )
-    )
-;
+    );

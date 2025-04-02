@@ -6,17 +6,14 @@ use Phpro\SoapClient\Type\ResultInterface;
 
 class GetEtiquetaEnvioResponse implements ResultInterface
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\EtiquetaEnvioResponse
-     */
-    private ?\Kavinsky\MRW\Type\EtiquetaEnvioResponse $GetEtiquetaEnvioResult = null;
+    private ?EtiquetaEnvioResponse $GetEtiquetaEnvioResult = null;
 
-    public function getGetEtiquetaEnvioResult() : ?\Kavinsky\MRW\Type\EtiquetaEnvioResponse
+    public function getGetEtiquetaEnvioResult(): ?EtiquetaEnvioResponse
     {
         return $this->GetEtiquetaEnvioResult;
     }
 
-    public function withGetEtiquetaEnvioResult(?\Kavinsky\MRW\Type\EtiquetaEnvioResponse $GetEtiquetaEnvioResult) : static
+    public function withGetEtiquetaEnvioResult(?EtiquetaEnvioResponse $GetEtiquetaEnvioResult): static
     {
         $new = clone $this;
         $new->GetEtiquetaEnvioResult = $GetEtiquetaEnvioResult;
@@ -24,4 +21,3 @@ class GetEtiquetaEnvioResponse implements ResultInterface
         return $new;
     }
 }
-

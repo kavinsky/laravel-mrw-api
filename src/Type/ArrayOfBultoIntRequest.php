@@ -5,16 +5,24 @@ namespace Kavinsky\MRW\Type;
 class ArrayOfBultoIntRequest
 {
     /**
-     * @var null | array<int<0,max>, \Kavinsky\MRW\Type\BultoIntRequest>
+     * @var null|array<int<0, max>, BultoIntRequest>
      */
     private ?array $BultoIntRequest = null;
 
-    public function getBultoIntRequest() : ?array
+    /**
+     * @return \Kavinsky\MRW\Type\BultoIntRequest[]|null
+     */
+    public function getBultoIntRequest(): ?array
     {
         return $this->BultoIntRequest;
     }
 
-    public function withBultoIntRequest(?array $BultoIntRequest) : static
+    /**
+     * @param null|array<int<0, max>, BultoIntRequest> $BultoIntRequest
+     *
+     * @return $this
+     */
+    public function withBultoIntRequest(?array $BultoIntRequest): static
     {
         $new = clone $this;
         $new->BultoIntRequest = $BultoIntRequest;
@@ -22,4 +30,3 @@ class ArrayOfBultoIntRequest
         return $new;
     }
 }
-

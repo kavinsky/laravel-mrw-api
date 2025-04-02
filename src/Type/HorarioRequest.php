@@ -4,17 +4,14 @@ namespace Kavinsky\MRW\Type;
 
 class HorarioRequest
 {
-    /**
-     * @var null | \Kavinsky\MRW\Type\ArrayOfHorarioRangoRequest
-     */
-    private ?\Kavinsky\MRW\Type\ArrayOfHorarioRangoRequest $Rangos = null;
+    private ?ArrayOfHorarioRangoRequest $Rangos = null;
 
-    public function getRangos() : ?\Kavinsky\MRW\Type\ArrayOfHorarioRangoRequest
+    public function getRangos(): ?ArrayOfHorarioRangoRequest
     {
         return $this->Rangos;
     }
 
-    public function withRangos(?\Kavinsky\MRW\Type\ArrayOfHorarioRangoRequest $Rangos) : static
+    public function withRangos(?ArrayOfHorarioRangoRequest $Rangos): static
     {
         $new = clone $this;
         $new->Rangos = $Rangos;
@@ -22,4 +19,3 @@ class HorarioRequest
         return $new;
     }
 }
-

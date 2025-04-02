@@ -4,37 +4,22 @@ namespace Kavinsky\MRW\Type;
 
 class DireccionIntRequest
 {
-    /**
-     * @var null | string
-     */
     private ?string $Direccion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPostal = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Poblacion = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $Estado = null;
 
-    /**
-     * @var null | string
-     */
     private ?string $CodigoPais = null;
 
-    public function getDireccion() : ?string
+    public function getDireccion(): ?string
     {
         return $this->Direccion;
     }
 
-    public function withDireccion(?string $Direccion) : static
+    public function withDireccion(?string $Direccion): static
     {
         $new = clone $this;
         $new->Direccion = $Direccion;
@@ -42,12 +27,12 @@ class DireccionIntRequest
         return $new;
     }
 
-    public function getCodigoPostal() : ?string
+    public function getCodigoPostal(): ?string
     {
         return $this->CodigoPostal;
     }
 
-    public function withCodigoPostal(?string $CodigoPostal) : static
+    public function withCodigoPostal(?string $CodigoPostal): static
     {
         $new = clone $this;
         $new->CodigoPostal = $CodigoPostal;
@@ -55,12 +40,12 @@ class DireccionIntRequest
         return $new;
     }
 
-    public function getPoblacion() : ?string
+    public function getPoblacion(): ?string
     {
         return $this->Poblacion;
     }
 
-    public function withPoblacion(?string $Poblacion) : static
+    public function withPoblacion(?string $Poblacion): static
     {
         $new = clone $this;
         $new->Poblacion = $Poblacion;
@@ -68,12 +53,12 @@ class DireccionIntRequest
         return $new;
     }
 
-    public function getEstado() : ?string
+    public function getEstado(): ?string
     {
         return $this->Estado;
     }
 
-    public function withEstado(?string $Estado) : static
+    public function withEstado(?string $Estado): static
     {
         $new = clone $this;
         $new->Estado = $Estado;
@@ -81,12 +66,12 @@ class DireccionIntRequest
         return $new;
     }
 
-    public function getCodigoPais() : ?string
+    public function getCodigoPais(): ?string
     {
         return $this->CodigoPais;
     }
 
-    public function withCodigoPais(?string $CodigoPais) : static
+    public function withCodigoPais(?string $CodigoPais): static
     {
         $new = clone $this;
         $new->CodigoPais = $CodigoPais;
@@ -94,4 +79,3 @@ class DireccionIntRequest
         return $new;
     }
 }
-

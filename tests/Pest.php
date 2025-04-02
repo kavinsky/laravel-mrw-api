@@ -1,0 +1,5 @@
+<?php
+
+use Kavinsky\MRW\Tests\TestCase;
+
+uses(TestCase::class)->in(__DIR__);

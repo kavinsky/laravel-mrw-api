@@ -2,9 +2,8 @@
     "name": "kavinsky/mrw-api",
     "description": "An unofficial API implementation for MRW SOAP API.",
     "keywords": [
-        "Ignacio Muñoz Fernandez",
         "laravel",
-        "mrw-api"
+        "mrw"
     ],
     "homepage": "https://github.com/kavinsky/mrw-api",
     "license": "MIT",
@@ -16,26 +15,29 @@
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.3",
+        "ext-soap": "*",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0||^12.0"
     },
     "require-dev": {
+        "beste/in-memory-cache": "^1.3",
+        "larastan/larastan": "^2.9||^3.0",
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
-        "larastan/larastan": "^2.9||^3.0",
         "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
         "pestphp/pest": "^3.0",
         "pestphp/pest-plugin-arch": "^3.0",
         "pestphp/pest-plugin-laravel": "^3.0",
+        "phpro/soap-client": "^4.2",
         "phpstan/extension-installer": "^1.3||^2.0",
         "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
-        "phpstan/phpstan-phpunit": "^1.3||^2.0"
+        "phpstan/phpstan-phpunit": "^1.3||^2.0",
+        "rector/rector": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Kavinsky\\MRW\\": "src/",
-            "Kavinsky\\MRW\\Database\\Factories\\": "database/factories/"
+            "Kavinsky\\MRW\\": "src/"
         }
     },
     "autoload-dev": {
@@ -56,6 +58,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
             "phpstan/extension-installer": true
         }
     },

@@ -2,9 +2,9 @@
 
 namespace Kavinsky\MRW;
 
+use Kavinsky\MRW\Commands\MRWCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kavinsky\MRW\Commands\MRWCommand;
 
 class MRWServiceProvider extends PackageServiceProvider
 {
@@ -16,10 +16,6 @@ class MRWServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('mrw-api')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_mrw_api_table')
-            ->hasCommand(MRWCommand::class);
+            ->name('mrw-api');
     }
 }

@@ -16,7 +16,7 @@ class MRWServiceProvider extends PackageServiceProvider
     public function registeringPackage(): void
     {
         $this->app->bind(MRW::class, function ($app) {
-            return new MRW($app['events'], Config::fromArray($app['config']['services']['mrw']));
+            return new MRW(Config::fromArray($app['config']['services']['mrw']));
         });
 
     }

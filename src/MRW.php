@@ -2,65 +2,55 @@
 
 namespace Kavinsky\MRW;
 
-use Illuminate\Contracts\Events\Dispatcher;
-use Kavinsky\MRW\Adapter\LaravelEventDispatchingCaller;
-use Kavinsky\MRW\Adapter\LaravelHttpClient;
-use Phpro\SoapClient\Caller\EngineCaller;
-use Phpro\SoapClient\Soap\DefaultEngineFactory;
-use Phpro\SoapClient\Soap\EngineOptions;
-use Soap\Encoding\EncoderRegistry;
-use Soap\Psr18Transport\Psr18Transport;
+use Kavinsky\MRW\Types\ServiceType\Cancelar;
+use Kavinsky\MRW\Types\ServiceType\Etiqueta;
+use Kavinsky\MRW\Types\ServiceType\Points;
+use Kavinsky\MRW\Types\ServiceType\Transm;
+use Kavinsky\MRW\Types\ServiceType\Transmitir;
 
-/**
- * @method \Kavinsky\MRW\Type\TransmitirEnvioResponse transmitirEnvio(\Kavinsky\MRW\Type\TransmitirEnvio $parameters)
- * @method \Kavinsky\MRW\Type\TransmitirEnvioECResponse transmitirEnvioEC(\Kavinsky\MRW\Type\TransmitirEnvioEC $parameters)
- * @method \Kavinsky\MRW\Type\TransmEnvioResponse transmEnvio(\Kavinsky\MRW\Type\TransmEnvio $parameters)
- * @method \Kavinsky\MRW\Type\TransmEnvioECResponse transmEnvioEC(\Kavinsky\MRW\Type\TransmEnvioEC $parameters)
- * @method \Kavinsky\MRW\Type\GetEtiquetaEnvioResponse etiquetaEnvio(\Kavinsky\MRW\Type\GetEtiquetaEnvio $parameters)
- * @method \Kavinsky\MRW\Type\TransmEnvioInternacionalResponse transmEnvioInternacional(\Kavinsky\MRW\Type\TransmEnvioInternacional $parameters)
- * @method \Kavinsky\MRW\Type\GetEtiquetaEnvioInternacionalResponse etiquetaEnvioInternacional(\Kavinsky\MRW\Type\GetEtiquetaEnvioInternacional $parameters)
- * @method \Kavinsky\MRW\Type\CancelarEnvioResponse cancelarEnvio(\Kavinsky\MRW\Type\CancelarEnvio $parameters)
- * @method \Kavinsky\MRW\Type\GetPointsDBResponse pointsDB(\Kavinsky\MRW\Type\GetPointsDB $parameters)
- */
 class MRW
 {
     public function __construct(
-        private Dispatcher $dispatcher,
         private Config $config,
     ) {}
 
-    public function client(): Client
+    public function transm(array $additionalSoapOptions = []): Transm
     {
-        $engine = DefaultEngineFactory::create(
-            EngineOptions::defaults($this->config->wsdl)
-                ->withTransport(Psr18Transport::createForClient(
-                    LaravelHttpClient::make($this->config->httpOptions)
-                ))
-                ->withEncoderRegistry(
-                    EncoderRegistry::default()
-                        ->addClassMapCollection(MRWClassMap::types())
-                        ->addBackedEnumClassMapCollection(MRWClassMap::enums())
-                )
-            // If you want to enable WSDL caching:
-            // ->withCache()
-            // If you want to use Alternate HTTP settings:
-            // ->withWsdlLoader()
-            // ->withTransport()
-            // If you want specific SOAP setting:
-            // ->withWsdlParserContext()
-            // ->withWsdlServiceSelectionCriteria()
-        );
+        $client = new Transm(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
 
-        return new Client(
-            new LaravelEventDispatchingCaller(new EngineCaller($engine), $this->dispatcher)
-        );
+        return $client;
     }
 
-    /**
-     * @param  mixed[]  $parameters
-     */
-    public function __call(string $method, array $parameters): mixed
+    public function transmitir(array $additionalSoapOptions = []): Transmitir
     {
-        return $this->client()->$method(...$parameters);
+        $client = new Transmitir(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfoSWGE($this->config->getAuthInfoSWGEHeader());
+
+        return $client;
+    }
+
+    public function cancelar(array $additionalSoapOptions = []): Cancelar
+    {
+        $client = new Cancelar(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
+
+        return $client;
+    }
+
+    public function points(array $additionalSoapOptions = []): Points
+    {
+        $client = new Points(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
+
+        return $client;
+    }
+
+    public function etiqueta(array $additionalSoapOptions = []): Etiqueta
+    {
+        $client = new Etiqueta(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
+
+        return $client;
     }
 }

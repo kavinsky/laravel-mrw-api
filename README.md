@@ -1,11 +1,6 @@
-# An unofficial API implementation for MRW SOAP API.
+# An unofficial API implementation for MRW SOAP API for Laravel.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/kavinsky/mrw-api.svg?style=flat-square)](https://packagist.org/packages/kavinsky/mrw-api)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/kavinsky/mrw-api/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/kavinsky/mrw-api/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/kavinsky/mrw-api/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/kavinsky/mrw-api/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/kavinsky/mrw-api.svg?style=flat-square)](https://packagist.org/packages/kavinsky/mrw-api)
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Package still in development, do not use in production environments.
 
 ## Installation
 
@@ -34,41 +29,11 @@ return [
 ]
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="mrw-api-views"
-```
 
 ## Usage
 
-```php
-$mRW = new Kavinsky\MRW();
-echo $mRW->echoPhrase('Hello, Kavinsky!');
-```
+Still in progress. The package is not ready yet.
 
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
-
-## Credits
-
-- [Ignacio Muñoz Fernandez](https://github.com/kavinsky)
-- [All Contributors](../../contributors)
 
 ## License
 

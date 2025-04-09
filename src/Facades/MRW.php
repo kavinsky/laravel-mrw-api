@@ -2,12 +2,12 @@
 
 namespace Kavinsky\MRW\Facades;
 
+use Illuminate\Support\Facades\Facade;
+use Kavinsky\MRW\Types\ServiceType\Cancelar;
+use Kavinsky\MRW\Types\ServiceType\Etiqueta;
+use Kavinsky\MRW\Types\ServiceType\Points;
 use Kavinsky\MRW\Types\ServiceType\Transm;
 use Kavinsky\MRW\Types\ServiceType\Transmitir;
-use Kavinsky\MRW\Types\ServiceType\Cancelar;
-use Kavinsky\MRW\Types\ServiceType\Points;
-use Kavinsky\MRW\Types\ServiceType\Etiqueta;
-use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \Kavinsky\MRW\MRW

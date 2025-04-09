@@ -1,5 +1,5 @@
 {
-    "name": "kavinsky/mrw-api",
+    "name": "kavinsky/laravel-mrw-api",
     "description": "An unofficial API implementation for MRW SOAP API.",
     "keywords": [
         "laravel",

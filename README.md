@@ -7,7 +7,7 @@ Package still in development, do not use in production environments.
 You can install the package via composer:
 
 ```bash
-composer require kavinsky/mrw-api
+composer require kavinsky/laravel-mrw-api
 ```
 
 Configure `mrw` entry in your `config/services.php` file:

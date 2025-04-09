@@ -11,10 +11,6 @@ readonly class Config
 {
     public const SERVICE_NS = 'http://www.mrw.es/';
 
-    /**
-     * @param  non-empty-string  $wsdl
-     * @param  mixed[]  $soapOptions
-     */
     public function __construct(
         public string $wsdl,
         public ?string $authUsername,

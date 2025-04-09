@@ -48,9 +48,6 @@
             "Workbench\\App\\": "workbench/app/"
         }
     },
-    "provide": {
-        "psr/cache-implementation": "3.0"
-    },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",

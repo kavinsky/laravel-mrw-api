@@ -1,7 +1,553 @@
 parameters:
 	ignoreErrors:
 		-
+			message: '#^Method Kavinsky\\MRW\\Config\:\:__construct\(\) has parameter \$soapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config.php
+
+		-
 			message: '#^Method Kavinsky\\MRW\\Config\:\:fromArray\(\) has parameter \$config with no value type specified in iterable type array\.$#'
 			identifier: missingType.iterableValue
 			count: 1
 			path: src/Config.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Config\:\:getSoapOptions\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Config.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\MRW\:\:cancelar\(\) has parameter \$additionalSoapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/MRW.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\MRW\:\:etiqueta\(\) has parameter \$additionalSoapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/MRW.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\MRW\:\:points\(\) has parameter \$additionalSoapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/MRW.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\MRW\:\:transm\(\) has parameter \$additionalSoapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/MRW.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\MRW\:\:transmitir\(\) has parameter \$additionalSoapOptions with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/MRW.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:\$BultoIntRequest because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:__construct\(\) has parameter \$bultoIntRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoIntRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoIntRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:getBultoIntRequest\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoIntRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoIntRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoIntRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:setBultoIntRequest\(\) has parameter \$bultoIntRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:validateBultoIntRequestForArrayConstraintFromSetBultoIntRequest\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoIntRequest\:\:\$BultoIntRequest type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoIntRequest.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:\$BultoRequest because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:__construct\(\) has parameter \$bultoRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:getBultoRequest\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\BultoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:setBultoRequest\(\) has parameter \$bultoRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:validateBultoRequestForArrayConstraintFromSetBultoRequest\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfBultoRequest\:\:\$BultoRequest type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfBultoRequest.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:\$HorarioRangoRequest because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:__construct\(\) has parameter \$horarioRangoRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\HorarioRangoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\HorarioRangoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:getHorarioRangoRequest\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\HorarioRangoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\HorarioRangoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\HorarioRangoRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:setHorarioRangoRequest\(\) has parameter \$horarioRangoRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:validateHorarioRangoRequestForArrayConstraintFromSetHorarioRangoRequest\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfHorarioRangoRequest\:\:\$HorarioRangoRequest type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfHorarioRangoRequest.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:\$Label because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:__construct\(\) has parameter \$label with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\Label\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\Label\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:getLabel\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\Label\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\Label\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\Label\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:setLabel\(\) has parameter \$label with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:validateLabelForArrayConstraintFromSetLabel\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfLabel\:\:\$Label type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfLabel.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:\$NotificacionRequest because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:__construct\(\) has parameter \$notificacionRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\NotificacionRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\NotificacionRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:getNotificacionRequest\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\NotificacionRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\NotificacionRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\NotificacionRequest\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:setNotificacionRequest\(\) has parameter \$notificacionRequest with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:validateNotificacionRequestForArrayConstraintFromSetNotificacionRequest\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfNotificacionRequest\:\:\$NotificacionRequest type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfNotificacionRequest.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Call to function is_object\(\) with non\-empty\-list\<non\-falsy\-string\> will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Cannot unset property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:\$PuntoDeRedDTO because it might have hooks in a subclass\.$#'
+			identifier: unset.possiblyHookedProperty
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:__construct\(\) has parameter \$puntoDeRedDTO with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:add\(\) should return Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO but returns WsdlToPhp\\PackageBase\\AbstractStructArrayBase\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:current\(\) should return Kavinsky\\MRW\\Types\\StructType\\PuntoDeRedDTO\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:first\(\) should return Kavinsky\\MRW\\Types\\StructType\\PuntoDeRedDTO\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:getPuntoDeRedDTO\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:item\(\) should return Kavinsky\\MRW\\Types\\StructType\\PuntoDeRedDTO\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:last\(\) should return Kavinsky\\MRW\\Types\\StructType\\PuntoDeRedDTO\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:offsetGet\(\) should return Kavinsky\\MRW\\Types\\StructType\\PuntoDeRedDTO\|null but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:setPuntoDeRedDTO\(\) has parameter \$puntoDeRedDTO with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Method Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:validatePuntoDeRedDTOForArrayConstraintFromSetPuntoDeRedDTO\(\) has parameter \$values with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php
+
+		-
+			message: '#^Property Kavinsky\\MRW\\Types\\ArrayType\\ArrayOfPuntoDeRedDTO\:\:\$PuntoDeRedDTO type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Types/ArrayType/ArrayOfPuntoDeRedDTO.php

@@ -7,9 +7,7 @@ return RectorConfig::configure()
         './src',
         './tests',
     ])
-    ->withImportNames(
-
-    )
+    ->withImportNames()
     ->withPreparedSets(
         deadCode: true,
         codeQuality: true,

@@ -62,16 +62,10 @@ use Kavinsky\MRW\Types\StructType\TransmitirEnvioECResponse;
 use Kavinsky\MRW\Types\StructType\TransmitirEnvioRequest;
 use Kavinsky\MRW\Types\StructType\TransmitirEnvioResponse;
 
-/**
- * Class which returns the class map definition
- */
 class ClassMap
 {
     /**
-     * Returns the mapping between the WSDL Structs and generated Structs' classes
-     * This array is sent to the \SoapClient when calling the WS
-     *
-     * @return string[]
+     * @return array<string, class-string>
      */
     final public static function get(): array
     {

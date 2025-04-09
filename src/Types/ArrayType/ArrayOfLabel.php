@@ -6,55 +6,21 @@ use InvalidArgumentException;
 use Kavinsky\MRW\Types\StructType\Label;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
-/**
- * This class stands for ArrayOfLabel ArrayType
- */
 class ArrayOfLabel extends AbstractStructArrayBase
 {
-    /**
-     * The Label
-     * Meta information extracted from the WSDL
-     * - maxOccurs: unbounded
-     * - minOccurs: 0
-     * - nillable: true
-     *
-     * @var \StructType\Label[]|null
-     */
     protected ?array $Label = null;
 
-    /**
-     * Constructor method for ArrayOfLabel
-     *
-     * @uses ArrayOfLabel::setLabel()
-     *
-     * @param  \StructType\Label[]  $label
-     */
     public function __construct(?array $label = null)
     {
         $this
             ->setLabel($label);
     }
 
-    /**
-     * Get Label value
-     * An additional test has been added (isset) before returning the property value as
-     * this property may have been unset before, due to the fact that this property is
-     * removable from the request (nillable=true+minOccurs=0)
-     *
-     * @return \StructType\Label[]|null
-     */
     public function getLabel(): ?array
     {
         return $this->Label ?? null;
     }
 
-    /**
-     * This method is responsible for validating the value(s) passed to the setLabel method
-     * This method is willingly generated in order to preserve the one-line inline validation within the setLabel method
-     * This has to validate that each item contained by the array match the itemType constraint
-     *
-     * @return string A non-empty message if the values does not match the validation rules
-     */
     public static function validateLabelForArrayConstraintFromSetLabel(?array $values = []): string
     {
         if (! is_array($values)) {
@@ -76,16 +42,6 @@ class ArrayOfLabel extends AbstractStructArrayBase
         return $message;
     }
 
-    /**
-     * Set Label value
-     * This property is removable from request (nillable=true+minOccurs=0), therefore
-     * if the value assigned to this property is null, it is removed from this object
-     *
-     * @param  \StructType\Label[]  $label
-     * @return \ArrayType\ArrayOfLabel
-     *
-     * @throws InvalidArgumentException
-     */
     public function setLabel(?array $label = null): self
     {
         // validation for constraint: array
@@ -101,70 +57,31 @@ class ArrayOfLabel extends AbstractStructArrayBase
         return $this;
     }
 
-    /**
-     * Returns the current element
-     *
-     * @see AbstractStructArrayBase::current()
-     */
     public function current(): ?Label
     {
         return parent::current();
     }
 
-    /**
-     * Returns the indexed element
-     *
-     * @see AbstractStructArrayBase::item()
-     *
-     * @param  int  $index
-     */
     public function item($index): ?Label
     {
         return parent::item($index);
     }
 
-    /**
-     * Returns the first element
-     *
-     * @see AbstractStructArrayBase::first()
-     */
     public function first(): ?Label
     {
         return parent::first();
     }
 
-    /**
-     * Returns the last element
-     *
-     * @see AbstractStructArrayBase::last()
-     */
     public function last(): ?Label
     {
         return parent::last();
     }
 
-    /**
-     * Returns the element at the offset
-     *
-     * @see AbstractStructArrayBase::offsetGet()
-     *
-     * @param  int  $offset
-     */
     public function offsetGet($offset): ?Label
     {
         return parent::offsetGet($offset);
     }
 
-    /**
-     * Add element to array
-     *
-     * @see AbstractStructArrayBase::add()
-     *
-     * @param  \StructType\Label  $item
-     * @return \ArrayType\ArrayOfLabel
-     *
-     * @throws InvalidArgumentException
-     */
     public function add($item): self
     {
         // validation for constraint: itemType
@@ -175,13 +92,6 @@ class ArrayOfLabel extends AbstractStructArrayBase
         return parent::add($item);
     }
 
-    /**
-     * Returns the attribute name
-     *
-     * @see AbstractStructArrayBase::getAttributeName()
-     *
-     * @return string Label
-     */
     public function getAttributeName(): string
     {
         return 'Label';

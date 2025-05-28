@@ -60,6 +60,6 @@ class MRW
         $client = new Get(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
         $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
 
-        return  $client;
+        return $client;
     }
 }

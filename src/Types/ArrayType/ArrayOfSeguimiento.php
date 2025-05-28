@@ -21,17 +21,17 @@ class ArrayOfSeguimiento extends AbstractStructArrayBase
 
     public static function validateSeguimientoForArrayConstraintFromSetSeguimiento(?array $values = []): string
     {
-        if (!is_array($values)) {
+        if (! is_array($values)) {
             return '';
         }
         $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfSeguimientoSeguimientoItem) {
-            if (!$arrayOfSeguimientoSeguimientoItem instanceof \Kavinsky\MRW\Types\StructType\Seguimiento) {
+            if (! $arrayOfSeguimientoSeguimientoItem instanceof \Kavinsky\MRW\Types\StructType\Seguimiento) {
                 $invalidValues[] = is_object($arrayOfSeguimientoSeguimientoItem) ? get_class($arrayOfSeguimientoSeguimientoItem) : sprintf('%s(%s)', gettype($arrayOfSeguimientoSeguimientoItem), var_export($arrayOfSeguimientoSeguimientoItem, true));
             }
         }
-        if (!empty($invalidValues)) {
+        if (! empty($invalidValues)) {
             $message = sprintf('The Seguimiento property can only contain items of type \Kavinsky\MRW\Types\StructType\Seguimiento, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
@@ -80,9 +80,10 @@ class ArrayOfSeguimiento extends AbstractStructArrayBase
 
     public function add($item): self
     {
-        if (!$item instanceof \Kavinsky\MRW\Types\StructType\Seguimiento) {
+        if (! $item instanceof \Kavinsky\MRW\Types\StructType\Seguimiento) {
             throw new InvalidArgumentException(sprintf('The Seguimiento property can only contain items of type \Kavinsky\MRW\Types\StructType\Seguimiento, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
+
         return parent::add($item);
     }
 

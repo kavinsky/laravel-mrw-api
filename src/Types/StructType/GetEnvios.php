@@ -9,15 +9,25 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 class GetEnvios extends AbstractStructBase
 {
     protected ?int $codigoIdioma = null;
+
     protected ?string $login = null;
+
     protected ?string $pass = null;
+
     protected ?string $tipoFiltro = null;
+
     protected ?string $valorFiltroDesde = null;
+
     protected ?string $valorFiltroHasta = null;
+
     protected ?string $fechaDesde = null;
+
     protected ?string $fechaHasta = null;
+
     protected ?string $tipoInformacion = null;
+
     protected ?string $codigoAbonado = null;
+
     protected ?string $codigoFranquicia = null;
 
     public function __construct(?int $codigoIdioma = null, ?string $login = null, ?string $pass = null, ?string $tipoFiltro = null, ?string $valorFiltroDesde = null, ?string $valorFiltroHasta = null, ?string $fechaDesde = null, ?string $fechaHasta = null, ?string $tipoInformacion = null, ?string $codigoAbonado = null, ?string $codigoFranquicia = null)
@@ -43,10 +53,11 @@ class GetEnvios extends AbstractStructBase
 
     public function setCodigoIdioma(?int $codigoIdioma = null): self
     {
-        if (!is_null($codigoIdioma) && !(is_int($codigoIdioma) || ctype_digit($codigoIdioma))) {
+        if (! is_null($codigoIdioma) && ! (is_int($codigoIdioma) || ctype_digit($codigoIdioma))) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer value, %s given', var_export($codigoIdioma, true), gettype($codigoIdioma)), __LINE__);
         }
         $this->codigoIdioma = $codigoIdioma;
+
         return $this;
     }
 
@@ -57,7 +68,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setLogin(?string $login = null): self
     {
-        if (!is_null($login) && !is_string($login)) {
+        if (! is_null($login) && ! is_string($login)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($login, true), gettype($login)), __LINE__);
         }
         if (is_null($login) || (is_array($login) && empty($login))) {
@@ -65,6 +76,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->login = $login;
         }
+
         return $this;
     }
 
@@ -75,7 +87,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setPass(?string $pass = null): self
     {
-        if (!is_null($pass) && !is_string($pass)) {
+        if (! is_null($pass) && ! is_string($pass)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($pass, true), gettype($pass)), __LINE__);
         }
         if (is_null($pass) || (is_array($pass) && empty($pass))) {
@@ -83,6 +95,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->pass = $pass;
         }
+
         return $this;
     }
 
@@ -93,7 +106,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setTipoFiltro(?string $tipoFiltro = null): self
     {
-        if (!is_null($tipoFiltro) && !is_string($tipoFiltro)) {
+        if (! is_null($tipoFiltro) && ! is_string($tipoFiltro)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tipoFiltro, true), gettype($tipoFiltro)), __LINE__);
         }
         if (is_null($tipoFiltro) || (is_array($tipoFiltro) && empty($tipoFiltro))) {
@@ -101,6 +114,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->tipoFiltro = $tipoFiltro;
         }
+
         return $this;
     }
 
@@ -111,7 +125,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setValorFiltroDesde(?string $valorFiltroDesde = null): self
     {
-        if (!is_null($valorFiltroDesde) && !is_string($valorFiltroDesde)) {
+        if (! is_null($valorFiltroDesde) && ! is_string($valorFiltroDesde)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($valorFiltroDesde, true), gettype($valorFiltroDesde)), __LINE__);
         }
         if (is_null($valorFiltroDesde) || (is_array($valorFiltroDesde) && empty($valorFiltroDesde))) {
@@ -119,6 +133,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->valorFiltroDesde = $valorFiltroDesde;
         }
+
         return $this;
     }
 
@@ -129,7 +144,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setValorFiltroHasta(?string $valorFiltroHasta = null): self
     {
-        if (!is_null($valorFiltroHasta) && !is_string($valorFiltroHasta)) {
+        if (! is_null($valorFiltroHasta) && ! is_string($valorFiltroHasta)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($valorFiltroHasta, true), gettype($valorFiltroHasta)), __LINE__);
         }
         if (is_null($valorFiltroHasta) || (is_array($valorFiltroHasta) && empty($valorFiltroHasta))) {
@@ -137,6 +152,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->valorFiltroHasta = $valorFiltroHasta;
         }
+
         return $this;
     }
 
@@ -147,7 +163,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setFechaDesde(?string $fechaDesde = null): self
     {
-        if (!is_null($fechaDesde) && !is_string($fechaDesde)) {
+        if (! is_null($fechaDesde) && ! is_string($fechaDesde)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fechaDesde, true), gettype($fechaDesde)), __LINE__);
         }
         if (is_null($fechaDesde) || (is_array($fechaDesde) && empty($fechaDesde))) {
@@ -155,6 +171,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->fechaDesde = $fechaDesde;
         }
+
         return $this;
     }
 
@@ -165,7 +182,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setFechaHasta(?string $fechaHasta = null): self
     {
-        if (!is_null($fechaHasta) && !is_string($fechaHasta)) {
+        if (! is_null($fechaHasta) && ! is_string($fechaHasta)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fechaHasta, true), gettype($fechaHasta)), __LINE__);
         }
         if (is_null($fechaHasta) || (is_array($fechaHasta) && empty($fechaHasta))) {
@@ -173,6 +190,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->fechaHasta = $fechaHasta;
         }
+
         return $this;
     }
 
@@ -183,7 +201,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setTipoInformacion(?string $tipoInformacion = null): self
     {
-        if (!is_null($tipoInformacion) && !is_string($tipoInformacion)) {
+        if (! is_null($tipoInformacion) && ! is_string($tipoInformacion)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($tipoInformacion, true), gettype($tipoInformacion)), __LINE__);
         }
         if (is_null($tipoInformacion) || (is_array($tipoInformacion) && empty($tipoInformacion))) {
@@ -191,6 +209,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->tipoInformacion = $tipoInformacion;
         }
+
         return $this;
     }
 
@@ -201,7 +220,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setCodigoAbonado(?string $codigoAbonado = null): self
     {
-        if (!is_null($codigoAbonado) && !is_string($codigoAbonado)) {
+        if (! is_null($codigoAbonado) && ! is_string($codigoAbonado)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codigoAbonado, true), gettype($codigoAbonado)), __LINE__);
         }
         if (is_null($codigoAbonado) || (is_array($codigoAbonado) && empty($codigoAbonado))) {
@@ -209,6 +228,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->codigoAbonado = $codigoAbonado;
         }
+
         return $this;
     }
 
@@ -219,7 +239,7 @@ class GetEnvios extends AbstractStructBase
 
     public function setCodigoFranquicia(?string $codigoFranquicia = null): self
     {
-        if (!is_null($codigoFranquicia) && !is_string($codigoFranquicia)) {
+        if (! is_null($codigoFranquicia) && ! is_string($codigoFranquicia)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($codigoFranquicia, true), gettype($codigoFranquicia)), __LINE__);
         }
         if (is_null($codigoFranquicia) || (is_array($codigoFranquicia) && empty($codigoFranquicia))) {
@@ -227,6 +247,7 @@ class GetEnvios extends AbstractStructBase
         } else {
             $this->codigoFranquicia = $codigoFranquicia;
         }
+
         return $this;
     }
 }

@@ -34,12 +34,10 @@ class Abonado extends AbstractStructBase
         return $this;
     }
 
-
     public function getSeguimientoAbonado(): ?\Kavinsky\MRW\Types\ArrayType\ArrayOfSeguimiento
     {
         return $this->SeguimientoAbonado ?? null;
     }
-
 
     public function setSeguimientoAbonado(?\Kavinsky\MRW\Types\ArrayType\ArrayOfSeguimiento $seguimientoAbonado = null): self
     {

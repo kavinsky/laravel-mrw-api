@@ -2,12 +2,15 @@
 
 namespace Kavinsky\MRW\Types;
 
+use Kavinsky\MRW\Types\ArrayType\ArrayOfAbonado;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfBultoIntRequest;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfBultoRequest;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfHorarioRangoRequest;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfLabel;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfNotificacionRequest;
 use Kavinsky\MRW\Types\ArrayType\ArrayOfPuntoDeRedDTO;
+use Kavinsky\MRW\Types\ArrayType\ArrayOfSeguimiento;
+use Kavinsky\MRW\Types\StructType\Abonado;
 use Kavinsky\MRW\Types\StructType\AuthInfo;
 use Kavinsky\MRW\Types\StructType\AuthInfoSWGE;
 use Kavinsky\MRW\Types\StructType\BaseRequest;
@@ -18,6 +21,7 @@ use Kavinsky\MRW\Types\StructType\CancelaEnvioRequest;
 use Kavinsky\MRW\Types\StructType\CancelarEnvio;
 use Kavinsky\MRW\Types\StructType\CancelarEnvioRequest;
 use Kavinsky\MRW\Types\StructType\CancelarEnvioResponse;
+use Kavinsky\MRW\Types\StructType\Cliente;
 use Kavinsky\MRW\Types\StructType\CodigoPointDTO;
 use Kavinsky\MRW\Types\StructType\DatosDestinatarioIntRequest;
 use Kavinsky\MRW\Types\StructType\DatosDestinatarioRequest;
@@ -29,6 +33,10 @@ use Kavinsky\MRW\Types\StructType\DireccionPuntoDTO;
 use Kavinsky\MRW\Types\StructType\DireccionRequest;
 use Kavinsky\MRW\Types\StructType\EtiquetaEnvioRequest;
 use Kavinsky\MRW\Types\StructType\EtiquetaEnvioResponse;
+use Kavinsky\MRW\Types\StructType\GetEnvios;
+use Kavinsky\MRW\Types\StructType\GetEnviosByDepartamento;
+use Kavinsky\MRW\Types\StructType\GetEnviosByDepartamentoResponse;
+use Kavinsky\MRW\Types\StructType\GetEnviosResponse;
 use Kavinsky\MRW\Types\StructType\GetEtiquetaEnvio;
 use Kavinsky\MRW\Types\StructType\GetEtiquetaEnvioInternacional;
 use Kavinsky\MRW\Types\StructType\GetEtiquetaEnvioInternacionalResponse;
@@ -37,6 +45,7 @@ use Kavinsky\MRW\Types\StructType\GetPointsDB;
 use Kavinsky\MRW\Types\StructType\GetPointsDBResponse;
 use Kavinsky\MRW\Types\StructType\HorarioRangoRequest;
 use Kavinsky\MRW\Types\StructType\HorarioRequest;
+use Kavinsky\MRW\Types\StructType\InfoSeguimiento;
 use Kavinsky\MRW\Types\StructType\Label;
 use Kavinsky\MRW\Types\StructType\ModificaDatosEnvioRequest;
 use Kavinsky\MRW\Types\StructType\NotificacionIntRequest;
@@ -45,6 +54,7 @@ use Kavinsky\MRW\Types\StructType\PointRequest;
 use Kavinsky\MRW\Types\StructType\PointsRequest;
 use Kavinsky\MRW\Types\StructType\PointsResponse;
 use Kavinsky\MRW\Types\StructType\PuntoDeRedDTO;
+use Kavinsky\MRW\Types\StructType\Seguimiento;
 use Kavinsky\MRW\Types\StructType\SeguroOpcionalRequest;
 use Kavinsky\MRW\Types\StructType\TransEnvioECResponse;
 use Kavinsky\MRW\Types\StructType\TransmEnvio;
@@ -129,6 +139,16 @@ class ClassMap
             'PuntoDeRedDTO' => PuntoDeRedDTO::class,
             'CodigoPointDTO' => CodigoPointDTO::class,
             'DireccionPuntoDTO' => DireccionPuntoDTO::class,
+            'InfoSeguimiento' => InfoSeguimiento::class,
+            'ArrayOfAbonado' => ArrayOfAbonado::class,
+            'Abonado' => Abonado::class,
+            'Cliente' => Cliente::class,
+            'ArrayOfSeguimiento' => ArrayOfSeguimiento::class,
+            'Seguimiento' => Seguimiento::class,
+            'GetEnvios' => GetEnvios::class,
+            'GetEnviosResponse' => GetEnviosResponse::class,
+            'GetEnviosByDepartamento' => GetEnviosByDepartamento::class,
+            'GetEnviosByDepartamentoResponse' => GetEnviosByDepartamentoResponse::class,
         ];
     }
 }

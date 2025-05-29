@@ -4,6 +4,7 @@ namespace Kavinsky\MRW;
 
 use Kavinsky\MRW\Types\ServiceType\Cancelar;
 use Kavinsky\MRW\Types\ServiceType\Etiqueta;
+use Kavinsky\MRW\Types\ServiceType\Get;
 use Kavinsky\MRW\Types\ServiceType\Points;
 use Kavinsky\MRW\Types\ServiceType\Transm;
 use Kavinsky\MRW\Types\ServiceType\Transmitir;
@@ -49,6 +50,14 @@ class MRW
     public function etiqueta(array $additionalSoapOptions = []): Etiqueta
     {
         $client = new Etiqueta(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
+
+        return $client;
+    }
+
+    public function tracking(array $additionalSoapOptions = []): Get
+    {
+        $client = new Get(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
         $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
 
         return $client;

@@ -9,18 +9,31 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 class Seguimiento extends AbstractStructBase
 {
     protected ?int $Intentos = null;
+
     protected ?string $Publicado = null;
+
     protected ?int $CantidadBultos = null;
+
     protected ?string $Estado = null;
+
     protected ?string $EstadoDescripcion = null;
+
     protected ?string $FechaEntrega = null;
+
     protected ?string $HoraEntrega = null;
+
     protected ?string $NumAlbaran = null;
+
     protected ?string $PersonaEntrega = null;
+
     protected ?string $Referencia = null;
+
     protected ?string $DireccionTextualEntrega = null;
+
     protected ?string $Observaciones1 = null;
+
     protected ?string $Observaciones2 = null;
+
     protected ?string $ReferenciaClienteEntrega = null;
 
     public function __construct(
@@ -63,10 +76,11 @@ class Seguimiento extends AbstractStructBase
 
     public function setIntentos(?int $intentos = null): self
     {
-        if (!is_null($intentos) && !(is_int($intentos) || ctype_digit($intentos))) {
+        if (! is_null($intentos) && ! (is_int($intentos) || ctype_digit($intentos))) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer, %s given', var_export($intentos, true), gettype($intentos)), __LINE__);
         }
         $this->Intentos = $intentos;
+
         return $this;
     }
 
@@ -77,10 +91,11 @@ class Seguimiento extends AbstractStructBase
 
     public function setPublicado(?string $publicado = null): self
     {
-        if (!is_null($publicado) && !is_string($publicado)) {
+        if (! is_null($publicado) && ! is_string($publicado)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($publicado, true), gettype($publicado)), __LINE__);
         }
         $this->Publicado = $publicado;
+
         return $this;
     }
 
@@ -91,10 +106,11 @@ class Seguimiento extends AbstractStructBase
 
     public function setCantidadBultos(?int $cantidadBultos = null): self
     {
-        if (!is_null($cantidadBultos) && !(is_int($cantidadBultos) || ctype_digit($cantidadBultos))) {
+        if (! is_null($cantidadBultos) && ! (is_int($cantidadBultos) || ctype_digit($cantidadBultos))) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide an integer, %s given', var_export($cantidadBultos, true), gettype($cantidadBultos)), __LINE__);
         }
         $this->CantidadBultos = $cantidadBultos;
+
         return $this;
     }
 
@@ -105,7 +121,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setEstado(?string $estado = null): self
     {
-        if (!is_null($estado) && !is_string($estado)) {
+        if (! is_null($estado) && ! is_string($estado)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($estado, true), gettype($estado)), __LINE__);
         }
         if (is_null($estado) || (is_array($estado) && empty($estado))) {
@@ -113,6 +129,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->Estado = $estado;
         }
+
         return $this;
     }
 
@@ -123,7 +140,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setEstadoDescripcion(?string $estadoDescripcion = null): self
     {
-        if (!is_null($estadoDescripcion) && !is_string($estadoDescripcion)) {
+        if (! is_null($estadoDescripcion) && ! is_string($estadoDescripcion)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($estadoDescripcion, true), gettype($estadoDescripcion)), __LINE__);
         }
         if (is_null($estadoDescripcion) || (is_array($estadoDescripcion) && empty($estadoDescripcion))) {
@@ -131,6 +148,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->EstadoDescripcion = $estadoDescripcion;
         }
+
         return $this;
     }
 
@@ -141,7 +159,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setFechaEntrega(?string $fechaEntrega = null): self
     {
-        if (!is_null($fechaEntrega) && !is_string($fechaEntrega)) {
+        if (! is_null($fechaEntrega) && ! is_string($fechaEntrega)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($fechaEntrega, true), gettype($fechaEntrega)), __LINE__);
         }
         if (is_null($fechaEntrega) || (is_array($fechaEntrega) && empty($fechaEntrega))) {
@@ -149,6 +167,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->FechaEntrega = $fechaEntrega;
         }
+
         return $this;
     }
 
@@ -159,7 +178,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setHoraEntrega(?string $horaEntrega = null): self
     {
-        if (!is_null($horaEntrega) && !is_string($horaEntrega)) {
+        if (! is_null($horaEntrega) && ! is_string($horaEntrega)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($horaEntrega, true), gettype($horaEntrega)), __LINE__);
         }
         if (is_null($horaEntrega) || (is_array($horaEntrega) && empty($horaEntrega))) {
@@ -167,6 +186,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->HoraEntrega = $horaEntrega;
         }
+
         return $this;
     }
 
@@ -177,7 +197,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setNumAlbaran(?string $numAlbaran = null): self
     {
-        if (!is_null($numAlbaran) && !is_string($numAlbaran)) {
+        if (! is_null($numAlbaran) && ! is_string($numAlbaran)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($numAlbaran, true), gettype($numAlbaran)), __LINE__);
         }
         if (is_null($numAlbaran) || (is_array($numAlbaran) && empty($numAlbaran))) {
@@ -185,6 +205,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->NumAlbaran = $numAlbaran;
         }
+
         return $this;
     }
 
@@ -195,7 +216,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setPersonaEntrega(?string $personaEntrega = null): self
     {
-        if (!is_null($personaEntrega) && !is_string($personaEntrega)) {
+        if (! is_null($personaEntrega) && ! is_string($personaEntrega)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($personaEntrega, true), gettype($personaEntrega)), __LINE__);
         }
         if (is_null($personaEntrega) || (is_array($personaEntrega) && empty($personaEntrega))) {
@@ -203,6 +224,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->PersonaEntrega = $personaEntrega;
         }
+
         return $this;
     }
 
@@ -213,7 +235,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setReferencia(?string $referencia = null): self
     {
-        if (!is_null($referencia) && !is_string($referencia)) {
+        if (! is_null($referencia) && ! is_string($referencia)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($referencia, true), gettype($referencia)), __LINE__);
         }
         if (is_null($referencia) || (is_array($referencia) && empty($referencia))) {
@@ -221,6 +243,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->Referencia = $referencia;
         }
+
         return $this;
     }
 
@@ -231,7 +254,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setDireccionTextualEntrega(?string $direccionTextualEntrega = null): self
     {
-        if (!is_null($direccionTextualEntrega) && !is_string($direccionTextualEntrega)) {
+        if (! is_null($direccionTextualEntrega) && ! is_string($direccionTextualEntrega)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($direccionTextualEntrega, true), gettype($direccionTextualEntrega)), __LINE__);
         }
         if (is_null($direccionTextualEntrega) || (is_array($direccionTextualEntrega) && empty($direccionTextualEntrega))) {
@@ -239,6 +262,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->DireccionTextualEntrega = $direccionTextualEntrega;
         }
+
         return $this;
     }
 
@@ -249,7 +273,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setObservaciones1(?string $observaciones1 = null): self
     {
-        if (!is_null($observaciones1) && !is_string($observaciones1)) {
+        if (! is_null($observaciones1) && ! is_string($observaciones1)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($observaciones1, true), gettype($observaciones1)), __LINE__);
         }
         if (is_null($observaciones1) || (is_array($observaciones1) && empty($observaciones1))) {
@@ -257,6 +281,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->Observaciones1 = $observaciones1;
         }
+
         return $this;
     }
 
@@ -267,7 +292,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setObservaciones2(?string $observaciones2 = null): self
     {
-        if (!is_null($observaciones2) && !is_string($observaciones2)) {
+        if (! is_null($observaciones2) && ! is_string($observaciones2)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($observaciones2, true), gettype($observaciones2)), __LINE__);
         }
         if (is_null($observaciones2) || (is_array($observaciones2) && empty($observaciones2))) {
@@ -275,6 +300,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->Observaciones2 = $observaciones2;
         }
+
         return $this;
     }
 
@@ -285,7 +311,7 @@ class Seguimiento extends AbstractStructBase
 
     public function setReferenciaClienteEntrega(?string $referenciaClienteEntrega = null): self
     {
-        if (!is_null($referenciaClienteEntrega) && !is_string($referenciaClienteEntrega)) {
+        if (! is_null($referenciaClienteEntrega) && ! is_string($referenciaClienteEntrega)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($referenciaClienteEntrega, true), gettype($referenciaClienteEntrega)), __LINE__);
         }
         if (is_null($referenciaClienteEntrega) || (is_array($referenciaClienteEntrega) && empty($referenciaClienteEntrega))) {
@@ -293,6 +319,7 @@ class Seguimiento extends AbstractStructBase
         } else {
             $this->ReferenciaClienteEntrega = $referenciaClienteEntrega;
         }
+
         return $this;
     }
 }

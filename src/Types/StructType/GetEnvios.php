@@ -13,6 +13,7 @@ class GetEnvios extends AbstractStructBase
     protected ?string $login = null;
 
     protected ?string $pass = null;
+
     protected ?string $tipoFiltro = null;
 
     protected ?string $valorFiltroDesde = null;

@@ -26,7 +26,7 @@ readonly class Config
     {
         return new self(
             wsdl: $config['wsdl'],
-            trackingWsdl:  $config['tracking_wsdl'],
+            trackingWsdl: $config['tracking_wsdl'],
             authUsername: $config['auth']['username'] ?? null,
             authPassword: $config['auth']['password'] ?? null,
             authFranchiseCode: $config['auth']['franchise_code'] ?? null,

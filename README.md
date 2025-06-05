@@ -17,6 +17,7 @@ return [
     // ...
     'mrw' => [
         'wsdl' => env('MRW_WSDL'),
+        'tracking_wsdl' => env('MRW_TRACKING_WSDL'),
         'auth' => [
             'client_code' => env('MRW_CLIENT_CODE'),
             'client_key' => env('MRW_CLIENT_KEY'),

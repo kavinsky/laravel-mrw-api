@@ -13,6 +13,7 @@ readonly class Config
 
     public function __construct(
         public string $wsdl,
+        public string $trackingWsdl,
         public ?string $authUsername,
         public ?string $authPassword,
         public ?string $authFranchiseCode,
@@ -25,6 +26,7 @@ readonly class Config
     {
         return new self(
             wsdl: $config['wsdl'],
+            trackingWsdl: $config['tracking_wsdl'],
             authUsername: $config['auth']['username'] ?? null,
             authPassword: $config['auth']['password'] ?? null,
             authFranchiseCode: $config['auth']['franchise_code'] ?? null,

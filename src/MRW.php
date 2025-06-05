@@ -8,6 +8,7 @@ use Kavinsky\MRW\Types\ServiceType\Get;
 use Kavinsky\MRW\Types\ServiceType\Points;
 use Kavinsky\MRW\Types\ServiceType\Transm;
 use Kavinsky\MRW\Types\ServiceType\Transmitir;
+use WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
 class MRW
 {
@@ -57,7 +58,11 @@ class MRW
 
     public function tracking(array $additionalSoapOptions = []): Get
     {
-        $client = new Get(array_merge($this->config->getSoapOptions(), $additionalSoapOptions));
+        $opts = $this->config->getSoapOptions();
+        $opts[AbstractSoapClientBase::WSDL_URL] = $this->config->trackingWsdl;
+        $opts[AbstractSoapClientBase::WSDL_SOAP_VERSION] = SOAP_1_1;
+
+        $client = new Get(array_merge($opts, $additionalSoapOptions));
         $client->setSoapHeaderAuthInfo($this->config->getAuthInfoHeader());
 
         return $client;

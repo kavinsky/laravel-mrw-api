@@ -21,17 +21,17 @@ class ArrayOfAbonado extends AbstractStructArrayBase
 
     public static function validateAbonadoForArrayConstraintFromSetAbonado(?array $values = []): string
     {
-        if (!is_array($values)) {
+        if (! is_array($values)) {
             return '';
         }
         $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfAbonadoAbonadoItem) {
-            if (!$arrayOfAbonadoAbonadoItem instanceof \Kavinsky\MRW\Types\StructType\Abonado) {
+            if (! $arrayOfAbonadoAbonadoItem instanceof \Kavinsky\MRW\Types\StructType\Abonado) {
                 $invalidValues[] = is_object($arrayOfAbonadoAbonadoItem) ? get_class($arrayOfAbonadoAbonadoItem) : sprintf('%s(%s)', gettype($arrayOfAbonadoAbonadoItem), var_export($arrayOfAbonadoAbonadoItem, true));
             }
         }
-        if (!empty($invalidValues)) {
+        if (! empty($invalidValues)) {
             $message = sprintf('The Abonado property can only contain items of type \Kavinsky\MRW\Types\StructType\Abonado, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
@@ -80,9 +80,10 @@ class ArrayOfAbonado extends AbstractStructArrayBase
 
     public function add($item): self
     {
-        if (!$item instanceof \Kavinsky\MRW\Types\StructType\Abonado) {
+        if (! $item instanceof \Kavinsky\MRW\Types\StructType\Abonado) {
             throw new InvalidArgumentException(sprintf('The Abonado property can only contain items of type \Kavinsky\MRW\Types\StructType\Abonado, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
+
         return parent::add($item);
     }
 

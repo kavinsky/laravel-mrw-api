@@ -9,6 +9,7 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
 class InfoSeguimiento extends AbstractStructBase
 {
     protected ?string $MensajeSeguimiento = null;
+
     protected ?\Kavinsky\MRW\Types\ArrayType\ArrayOfAbonado $Seguimiento = null;
 
     public function __construct(?string $mensajeSeguimiento = null, ?\Kavinsky\MRW\Types\ArrayType\ArrayOfAbonado $seguimiento = null)
@@ -25,7 +26,7 @@ class InfoSeguimiento extends AbstractStructBase
 
     public function setMensajeSeguimiento(?string $mensajeSeguimiento = null): self
     {
-        if (!is_null($mensajeSeguimiento) && !is_string($mensajeSeguimiento)) {
+        if (! is_null($mensajeSeguimiento) && ! is_string($mensajeSeguimiento)) {
             throw new InvalidArgumentException(sprintf('Invalid value %s, please provide a string, %s given', var_export($mensajeSeguimiento, true), gettype($mensajeSeguimiento)), __LINE__);
         }
         if (is_null($mensajeSeguimiento) || (is_array($mensajeSeguimiento) && empty($mensajeSeguimiento))) {

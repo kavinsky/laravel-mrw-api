@@ -1,0 +1,42 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - '**.php'
+      - 'composer.json'
+      - 'phpunit.xml.dist'
+      - '.github/workflows/tests.yml'
+
+jobs:
+  test:
+    name: P${{ matrix.php }} - L${{ matrix.laravel }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        php: [8.3, 8.4]
+        laravel: [10, 11, 12, 13]
+        exclude:
+          - php: 8.3
+            laravel: 13
+      fail-fast: false
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, mbstring, soap
+          coverage: none
+
+      - name: Install dependencies
+        uses: ramsey/composer-install@v3
+        with:
+          dependency-versions: lowest
+          composer-options: --prefer-dist
+
+      - name: Execute tests
+        run: vendor/bin/pest
